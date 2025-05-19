@@ -26,6 +26,28 @@ matplotlib.rcParams.update({
     'axes.unicode_minus': False
 })
 
+# 正则化提取result：result[key]
+def get_key_value(text):
+    result = {}
+    
+    # 匹配数组类型的键值对
+    array_pattern = r'"([^"]+)"\s*:\s*\[(.*?)\]'
+    array_matches = re.findall(array_pattern, text)
+    for key, array_content in array_matches:
+        # 提取数组中的每个元素
+        array_items = re.findall(r'"([^"]+)"', array_content)
+        result[key] = array_items
+    
+    # 匹配包含复杂内容的普通键值对（如包含LaTeX公式的文本）
+    # 使用非贪婪匹配来处理包含引号和特殊字符的内容
+    string_pattern = r'"([^"]+)"\s*:\s*"(.*?)(?:"|$)'
+    string_matches = re.findall(string_pattern, text, re.DOTALL)
+    for key, value in string_matches:
+        if key not in result:  # 避免覆盖已匹配的数组
+            result[key] = value
+    
+    return result
+
 def get_ans(question_json):
     """
     获取三个模型的答案并更新问题JSON
@@ -207,10 +229,10 @@ def extract_grade_and_subject(question, data):
     while flag:
         try:
             print(f"提取适合年级和子学科...第{count+1}次尝试")
-            response = call_deepseek_json(prompt_question + question)
-            response_json = json.loads(response)
-            data["适合年级"] = response_json.get("适合年级", "高中")
-            data["子学科"] = response_json.get("子学科", "数学")
+            response = call_deepseek_v3(prompt_question + question)
+            response = get_key_value(response)
+            data["适合年级"] = response["适合年级"]
+            data["子学科"] = response["子学科"]
             print(f"适合年级: {data['适合年级']}, 子学科: {data['子学科']}")
             flag = False
             return True
@@ -229,10 +251,10 @@ def extract_knowledge_and_analysis(question, standard_answer, data):
     while flag:
         try:
             print(f"提取考察知识点和分析过程...第{count+1}次尝试")
-            response = call_deepseek_json(prompt_answer + question + "\n参考答案:" + standard_answer)
-            response_json = json.loads(response)
-            data["考察知识点"] = response_json.get("考察知识点", "")
-            data["分析过程"] = response_json.get("分析过程", "")
+            response = call_deepseek_v3(prompt_answer + question + "\n参考答案:" + standard_answer)
+            response = get_key_value(response)
+            data["考察知识点"] = response["考察知识点"]
+            data["分析过程"] = response["分析过程"]
             print(f"考察知识点: {data['考察知识点']}")
             flag = False
             return True
@@ -254,10 +276,10 @@ def extract_error_method_and_points(question, wrong_ans, standard_answer, data):
     while flag:
         try:
             print(f"提取错误解题方法和易错点...第{count+1}次尝试")
-            response = call_deepseek_json(prompt_wrong + question + "\n错误答案:" + wrong_ans + "\n正确答案:" + standard_answer)
-            response_json = json.loads(response)
-            data["错误解题方法"] = response_json.get("错误解题方法", "")
-            data["易错点"] = response_json.get("易错点", "")
+            response = call_deepseek_v3(prompt_wrong + question + "\n错误答案:" + wrong_ans + "\n正确答案:" + standard_answer)
+            response = get_key_value(response)
+            data["错误解题方法"] = response["错误解题方法"]
+            data["易错点"] = response["易错点"]
             print(f"易错点: {data['易错点']}")
             flag = False
             return True
