@@ -1,0 +1,562 @@
+[
+    {
+        "question_number": "22.1_bd5544cba3",
+        "condition": "小明要去买水果",
+        "specific_questions": "6斤梨和苹果共20元，二者单价分别为3元/斤，5元/斤，求数量",
+        "solution": "空调器连续工作时，夏天为空调为制冷机，单位时间从室内吸收热量 $Q_{2}$ ，向室外放热 $Q_{1}$ ，故 $Q_{1}=Q_{2}+P$ ，因空调器作可逆卡诺循环，故有 $\\frac{Q_{1}}{T_{1}}=\\frac{Q_{2}}{T_{2}}$ 。由以上两式，得出 $Q_{2}=\\frac{T_{2}}{T_{1}-T_{2}} P$ 。单位时间内室外向室内传输的热量为 $A(T_{1}-T_{2})$ 。室温恒定，故 $A(T_{1}-T_{2})=\\frac{T_{2}}{T_{1}-T_{2}} P$ 。从而 $T_{1}-T_{2}=\\sqrt{\\frac{P}{A} T_{2}}$ 。最后得到 $T_{2}=T_{1}+\\frac{1}{2}\\left[\\frac{P_{0}}{A}-\\sqrt{\\left(\\frac{P_{0}}{A}, \\right)^{2}+\\frac{4 P_{0}}{A} T_{1}}\\nright] 。",
+        "final_answer": "$$T_{1}+\\frac{1}{2}\\left[\\frac{P_{0}}{A}-\\sqrt{\\left(\\frac{P_{0}}{A}, \\right)^{2}+\\frac{4 P_{0}}{A} T_{1}}\\nright]$$"
+    },
+    {
+        "question_number": "22.1_bd5544cba1",
+        "condition": "某空调器按可逆卡诺循环运转，其中的作功装置连续工作时所提供的功率为 $P_{0}$ 。夏天，室外温度为恒定的 $T_{1}$ 。室外通过热传导在单位时间内向室内传输的热量正比于 $\n(T_{1}-T_{2})$ ，比例系数为 $A$ 。",
+        "specific_questions": "用 $T_{1}, P_{0}$ 和 $A$ 来表示 $T_{2}$ 。",
+        "solution": "空调器连续工作时，夏天为空调为制冷机，单位时间从室内吸收热量 $Q_{2}$ ，向室外放热 $Q_{1}$ ，故 $Q_{1}=Q_{2}+P$ ，因空调器作可逆卡诺循环，故有 $\\frac{Q_{1}}{T_{1}}=\\frac{Q_{2}}{T_{2}}$ 。由以上两式，得出 $Q_{2}=\\frac{T_{2}}{T_{1}-T_{2}} P$ 。单位时间内室外向室内传输的热量为 $A(T_{1}-T_{2})$ 。室温恒定，故 $A(T_{1}-T_{2})=\\frac{T_{2}}{T_{1}-T_{2}} P$ 。从而 $T_{1}-T_{2}=\\sqrt{\\frac{P}{A} T_{2}}$ 。最后得到 $T_{2}=T_{1}+\\frac{1}{2}\\left[\\frac{P_{0}}{A}-\\sqrt{\\left(\\frac{P_{0}}{A}, \\right)^{2}+\\frac{4 P_{0}}{A} T_{1}}\\nright] 。",
+        "final_answer": "$$T_{1}+\\frac{1}{2}\\left[\\frac{P_{0}}{A}-\\sqrt{\\left(\\frac{P_{0}}{A}, \\right)^{2}+\\frac{4 P_{0}}{A} T_{1}}\\nright]$$"
+    },
+    {
+        "question_number": "22.2_23e49c2b6c",
+        "condition": "某空调器按可逆卡诺循环运转，其中的作功装置连续工作时所提供的功率为 $P_{0}$ 。冬天，可将空调器吸热、放热反向。室外温度为 $30^{\n\textdegree}\n\text{C}$ 时，若这台空调器只有 $30 \n\text{\n\textpercent}$的时间处于工作状态，室温为 $20^{\n\textdegree}\n\text{C}$ 。",
+        "specific_questions": "室外温度最高为多少时，用此空调器仍可使室温维持在 $20^{\n\textdegree}\n\text{C}$ 。",
+        "solution": "当 $T_{1}=293 \text{ K}, P=0.3 P_{0}$ 时，$T_{1}=303 \text{ K}$ 。 $P=P_{0}$ 时对应的 $T_{1}$ 值，记为 $T_{1,\n\text{max }}$ 。所求极限室外温度最高值为 $T_{1,\n\text{max }}$ ，由式 $T_{1,\n\n\text{max }}=T_{2}+\\sqrt{0.3}(T_{1}-T_{2})$ 得 $T_{1,\n\n\text{max }}=311.26 \text{ K}$ 。转化到摄氏得最高温 $t_{1,\n\u0000ea}max }=38.26 \n\text{\n\textdegree}\n\text{C}$ 。",
+        "final_answer": "38.26"
+    },
+    {
+        "question_number": "22.3_a9c0273e5c",
+        "condition": "某空调器按可逆卡诺循环运转，其中的作功装置连续工作时所提供的功率为 $P_{0}$ 。冬天，可将空调器吸热、放热反向。",
+        "specific_questions": "室外温度最低为多少时，用此空调器可使室温维持在 $20^{\n\textdegree}\n\text{C}$ 。",
+        "solution": "冬天空调器为热机，单位时间从室外吸热 $Q_{1}^{\n\text{'}}$ ，向室内放热 $Q_{2}^{\n\text{'}}$ ，功率为 $P_{0}$ ，有 $Q_{2}^{\n\text{'}}=Q_{1}^{\n\text{'}}+P_{0}$ 。因卡诺循环，$\\frac{Q_{1}^{\n\text{'}}}{T_{1}^{\n\text{'}}}=\\frac{Q_{2}^{\n\text{'}}}{T_{2}}$ 。从以上两式得出： $T_{2}-T_{1}^{\n\text{'}}=\\sqrt{\\frac{P_{0}}{A} T_{2}}$ 。得 $T_{1}^{\n\text{'}}=2 T_{2}-T_{1,\n\text{max }}=274.74 \text{ K}$ 。转化为摄氏得最低外温 $t_{1}^{\\prime}=1.74 \n\text{\n\textdegree}\n\text{C}$ 。",
+        "final_answer": "1.74"
+    },
+    {
+        "question_number": "23.1_46f175a8bf",
+        "condition": "长 $l$ 的均匀细棒，质量线密度为 $\\\\lambda$ ，开始时一端温度为 $T_{1}$ ，另一端温度为 $T_{2}=2 T_{1}$ ，中间各处温度线性地分布，此棒在绝热的情况下，最终达到热平衡。已知棒各处的比热为相同的常量 $C$ 。",
+        "specific_questions": "试求全过程棒的熵增量，并说明此过程是否可逆。",
+        "solution": "因棒各处温度线性地分布，故棒中任意 $x$ 处的温度为 $$T_{x} =T_{1}+\\frac{x}{l}(2T_{1}-T_{1})=(1+\\frac{x}{l})T_{1}$$ 设在绝热条件下达到热平衡后，棒各处的温度同为 $T_{e}$ ，则从 $x$ 到 $(x+\\mathrm{d}x)$ 小段的吸热量应为 $$\\mathrm{d} Q=C(\\lambda \\mathrm{d} x)(T_{e}-T_{x})$$ 积分，得棒在此过程中的总吸热量 $Q$ ，因绝热 $Q$ 为零，即 $$Q=\\int_{0}^{l} C(\\lambda \\mathrm{d} x)(T_{e}-T_{x})=0$$ 代入 $T_{x}$ 表达式积分得 $$T_{e}=\\frac{3}{2}T_{1}$$ 棒中从 $x$ 到 $(x+\\mathrm{d} x)$ 小段，在全过程中，温度从初态的 $T_{x}$ 达到终态的 $T_{e}$ 。该小段从 $T_{x}$ 到 $T_{e}$ 的熵增量为 $$\\mathrm{d}S=\\frac{C(\\lambda \\mathrm{d}x)\\mathrm{d}T}{T}$$ 积分得 $$\\Delta S = \\int_{0}^{l} C \\lambda \\ln \\frac{T_{e}}{T_{x}} \\mathrm{d}x$$ 代入得 $$\\Delta S = C \\lambda l \\left(1+\\ln \\frac{3}{8}\\right) = 0.019 C \\lambda l$$",
+        "final_answer": "0.019 C \\\\lambda l"
+    },
+    {
+        "question_number": "24.1_711b2260cb",
+        "condition": "图3.2 g 的氧气（绝热指数取为 $\\frac{7}{5}$ ）从初态 $1\\left(p_{1}=1.0 \\mathrm{~atm}, V_{1}=1.0 \\mathrm{~L}\\right)$ 出发，经过等压过程到达状态 $2\\left(V_{2}=2.0 \\mathrm{~L}\\right)$ ，再经过等体过程到达状态 $3\\left(p_{3}=2.0 \\mathrm{~atm}\\right)$ ，又经过绝热过程到达状态 4 ，状态 4 的温度刚好与状态 1 的温度相同，最后经等温过程回到状态 1 ，构成循环过程。",
+        "specific_questions": "试求循环过程的效率 $\\eta$. ",
+        "solution": "氧气的摩尔质量 $\\mu=32 \\mathrm{~g} / \\mathrm{mol}$, 摩尔数 $\\nu=0.1 \\mathrm{~mol}$, 等体摩尔热容量 $C_{V}=\\frac{5}{2} R$, 等压摩尔热容量 $C_{p}=\\frac{7}{2} R$, 绝热指数 $\\gamma=\\frac{7}{5}$.\\n由理想气体状态方程及过程方程可以算出各状态 $1,2,3,4$ 的 $p, V, T$. 状态 $1, T_{1}=122 \\mathrm{~K}$, 状态 $2, T_{2}=244 \\mathrm{~K}=2 T_{1}$, 状态 $3, T_{3}=488 \\mathrm{~K}=4 T_{1}$, 状态 $4, T_{4}=122 \\mathrm{~K}=T_{1}$.\\n等压过程 $1-2$ 的吸热量为 $Q_{1}=\\nu C_{p}\\left(T_{2}-T_{1}\\right)=\\frac{7}{2} \\nu R T_{1}$. 等体过程 $2-3$ 的吸热量为 $Q_{2}=\\nu C_{V}\\left(T_{3}-T_{2}\\right)=5 \\nu R T_{1}$.\\n绝热过程 3-4 的吸热量为零, 等温过程 $4-1$ 的放热量为 $Q_{3}=\\nu R T_{4} \\ln \\frac{V_{4}}{V_{1}}=(\\ln 64) \\nu R T_{1}$.\\n故循环过程 12341 的效率为 $\\eta=1-\\frac{Q_{3}}{Q_{1}+Q_{2}}=1-\\frac{\\ln 64}{\\frac{7}{2}+5}=0.51$.",
+        "final_answer": "0.51"
+    },
+    {
+        "question_number": "1_54f9e12da7",
+        "condition": "在一个密闭容器内盛有水，未满，处于平衡状态。已知水在 $14^{\\circ} \\mathrm{C}$ 时的饱和蒸气压为 12.0 \\mathrm{mmHg} 。设水蒸气分子碰到水面后，都能进人水内，设饱和水蒸气可看作理想气体。",
+        "specific_questions": "试问在 $100^{\\circ} \\mathrm{C}$ 和 $14^{\\circ} \\mathrm{C}$ 时，单位时间内通过单位面积水面蒸发成为水蒸气的分子数之比 $n_{100}: n_{14}$ 为多大。",
+        "solution": "在任意 $\\mathrm{d} t$ 时间内，通过任意 $\\mathrm{d} S$ 水面面积进人水面的水蒸气分子数 $\\mathrm{d} N$ 正比于以 $\\bar{v} \\mathrm{~d} t$ 为长度、 $\\mathrm{d} S$ 为底面积的柱体内的水蒸气分子数，设水蒸气分子的数密度为 $n_{0}$ ，则 $$\\mathrm{d} N=A n_{0} \\bar{v} \\mathrm{~d} t \\mathrm{~d} S$$ 式中 $A$ 为比例系数。于是，单位时间通过单位水面面积进人水中的水蒸气分子数为 $$n=\\frac{\\mathrm{d} N}{\\mathrm{~d} t \\mathrm{~d} S}=A n_{0} \\bar{v}$$ 平均速率 $\\bar{v}$ 与温度 $T$ 的关系为 $$\\bar{v}=B \\sqrt{T}$$ 式中 $B$ 为比例系数。由题设，水蒸气为理想气体，其状态方程为 $$p=n_{0} k T$$ 其中 $p$ 为压强， $k$ 为玻尔兹曼常数，即 $$n_{0}=\\frac{P}{k T}$$ 把上述 $\\bar{v}$ 和 $n_{0}$ 的表达式代入 $n$ 的表达式，得 $$n=A n_{0} \\bar{v}=A \\frac{p}{k T} B \\sqrt{T}=C \\frac{p}{\\sqrt{T}}$$ 式中 $C=\\frac{A B}{k}$ 为常量。 在 $100^{\\circ} \\mathrm{C}$ 即 $T=373 \\mathrm{~K}$ 时，饱和水蒸气的压强为 $p_{100}=760 \\mathrm{mmHg}$ 。在 $14^{\\circ} \\mathrm{C}$ 即 $T=287 \\mathrm{~K}$时，饱和水蒸气的压强为 $p_{14}=12.0 \\mathrm{~mmHg}$ ，代入上式，得 $$n_{100}: n_{14}=\\frac{p_{100}}{\\sqrt{373}}: \\frac{p_{14}}{\\sqrt{287}}=\\frac{760}{\\sqrt{373}}: \\frac{12}{\\sqrt{287}}=56: 1$$",
+        "final_answer": "56"
+    },
+    {
+        "question_number": "4.1_9b41e241fe",
+        "condition": "在一柱形容器内，有大量相同的小球沿着容器的长度方向往返运动。小球可视为质点，小球之间以及小球与容器端面之间作弹性碰撞，小球的速率以及向前还是向后运动都是无规的。可引入'温度' $T$ 的概念，它是由小球的平均动能 $\text{ε}$ 定义的，为 $\text{ε}=\frac{1}{2} k T$ ，式中 $k$ 是玻尔兹曼常数。在容器的一端安装平面弹性活塞，并使活塞缓慢地沿容器长度方向向内推进，运动的小球因与活塞作弹性正碰撞增加了动能，从而使系统的'温度'升高。",
+        "specific_questions": "试导出在活塞缓慢推进过程中，'温度' $T$ 与体积 $V$ 的关系式，设重力，引力，各种阻力和摩擦力均可忽略。",
+        "solution": "由于小球均相同，其间的碰撞是弹性正碰撞，故碰后两球交换速度。沿容器长度方向取 $x$ 轴，设容器长度为 $x$ ，活塞推进速度为 $u$ （因缓慢推进，故 $u \\ll v$ ）。速度为 $v$ 的小球经 $\text{Δ} t = \\frac{2 x}{v}$ 时间与活塞相碰一次。碰后，小球的速度变化率为 $$ \\frac{\\text{d} v}{\\text{~d} t} = \\frac{u v}{x} $$ 随着活塞的推进，在 $\text{d} t$ 时间内，容器缩短了一 $\text{d} x$ ，即 $$ u \\text{~d} t = -\\text{d} x $$ 由以上两式，得 $$ x \\text{~d} v + v \\text{~d} x = 0 $$ 小球的动能为 $$ \\text{ε} = \\frac{1}{2} m v^{2} $$ 即 $$ v = \\sqrt{\\frac{2 \\text{ε}}{m}} $$ $$ \\mathrm{d} v = \\frac{\\mathrm{d} \\text{ε}}{\\sqrt{2 m \\text{ε}}} $$ 代入(1)式,得 $$ x \\mathrm{d} \\text{ε} + 2 \\text{ε} \\mathrm{d} x = 0 $$ 把式对具有各种速度、动能的小球作平均，得 $$ x \\mathrm{d} \\ell + 2 \\ell \\mathrm{d} x = 0 $$ 用平均动能 $\\ell$ 定义系统的'温度' $T$ 为 $$ \\ell = \\frac{1}{2} k T $$ 代入，得 $$ x \\mathrm{d} T + 2 T \\mathrm{d} x = 0 $$ 容器底面积为 $S$ ，则体积 $V=S x$ ，上式变 $$ V \\mathrm{d} T + 2 T \\mathrm{d} V = 0 $$ 或 $$ \\frac{\\mathrm{d} T}{T} + \\frac{2 \\mathrm{d} V}{V} = 0 $$ 积分,得 $$ T V^{2} = \\text{常量} $$",
+        "final_answer": "TV^{2}=\\text{常量}"
+    },
+    {
+        "question_number": "5.1_ff68803ae0",
+        "condition": "空腔内的热辐射可以当作光子气来处理，设腔的内表面对光子是完全反射面。如果在某温度下，腔内热辐射已处于平衡状态，此时光子气的能量密度为 $u$ 。",
+        "specific_questions": "试求光子气的压强 $p$ 。",
+        "solution": "平衡态理想气体的压强公式为$$p=\\frac{1}{3} \\frac{N}{V} m \\overline{v^{2}}$$对于光子气中频率为 $\\nu$ 的光子，上式中的 $p 、 n=\\frac{N}{V} ， m 、 \\overline{v^{2}}$ 应分别为 $p_{\\nu} 、 n_{\\nu}=\\frac{N_{\\nu}}{V} , \\frac{h \\nu}{c^{2}} , c^{2}$ ，于是得出$$p_{\\nu}=\\frac{1}{3} n_{\\nu} \\frac{h \\nu}{c^{2}} c^{2}=\\frac{1}{3} n_{\\nu} h \\nu=\\frac{1}{3} u_{\\nu}$$式中 $u_{\\nu}=u_{\\nu} h \\nu$ 是频率为 $\\nu$ 的光子的能量密度，对各种可能的频率 $\\nu$ 求和，得出光子气的总压强为$$p=\\sum p_{\\nu}=\\frac{1}{3} \\sum u_{\\nu}=\\frac{1}{3} u$$式中 $u=\\sum u_{n}$ 是光子气的能量密度。",
+        "final_answer": "$$\\frac{1}{3} u$$"
+    },
+    {
+        "question_number": "5.2_b048168c39",
+        "condition": "空腔内的热辐射可以当作光子气来处理，设腔的内表面对光子是完全反射面。",
+        "specific_questions": "试证明 $u$ 只是温度 $T$ 的函数。",
+        "solution": "设 $u$ 不仅与温度 $T$ ，还与空腔体积 $V$ 及腔壁材料性质有关，则总可取温度相同而体积或腔壁材料不同的两个空腔，其间用小孔连通，在小孔中装上可以移动的无摩擦活塞。此时因活塞两边光子气的能量密度 $u$ 不同，由第 1 问的结果 $p=\\frac{1}{3} u$ ，两边光子气的压强便不同，于是活塞将被推动。这相当于从单一热源（由腔构成的等温系统）吸热，全部变为对外作功而不产生其他影响。显然违背了热力学第二定律。因此，前提有误，即 $u$ 与空腔体积 $V$ 及腔壁材料无关， $u$ 只能与温度 $T$ 有关，即$$u=u(T)$$",
+        "final_answer": "$$u(T)$$"
+    },
+    {
+        "question_number": "5.3_a5cf725ca4",
+        "condition": "空腔内的热辐射可以当作光子气来处理，设腔的内表面对光子是完全反射面。",
+        "specific_questions": "试证明 $p \\propto T^{4}$ 。",
+        "solution": "设空腔体积为 $V$ ，则光子气的总能量（内能）为$$U=u(T) V$$由热力学第二定律，$$\\mathrm{d} U=T \\mathrm{~d} S-p \\mathrm{~d} V$$得$$\\left(\\frac{\\partial U}{\\partial V}\\right)_{T}=\\left(T\\left(\\frac{\\partial S}{\\partial V}\\right)_{T}-p\\right.$$由$$\\mathrm{d} F=\\mathrm{d}(U-T S)=-S \\mathrm{~d} T-p \\mathrm{~d} V$$得$$\\left(\\frac{\\partial S}{\\partial V}\\right)_{T}=\\left(\\frac{\\partial p}{\\partial T}\\right)_{V}, \\quad\\left(\\frac{\\partial U}{\\partial V}\\right)_{T}=T\\left(\\frac{\\partial p}{\\partial T}\\right)_{V}-p$$应用于光子气，利用第 1.2 问的结果，有$$\\left(\\frac{\\partial U}{\\partial V}\\right)_{T}=u, \\quad\\left(\\frac{\\partial p}{\\partial T}\\right)_{V}=\\frac{1}{3} \\frac{\\mathrm{~d} u}{\\mathrm{~d} T}, \\quad p=\\frac{1}{3} u$$代入，得$$u=\\frac{1}{3} T \\frac{\\mathrm{~d} u}{\\mathrm{~d} T}-\\frac{1}{3} u$$即$$\\frac{\\mathrm{d} u}{u}=4 \\frac{\\mathrm{~d} T}{T}$$积分，得$$u=u_{0}\\left(\\frac{T}{T_{0}}\\right)^{4}$$即$$u \\propto T^{4}$$故光子气的压强 $p$ 与温度 $T$ 的关系为$$p \\propto T^{4}$$",
+        "final_answer": "$$T^{4}$$"
+    },
+    {
+        "question_number": "5.4_0d0e3faac5",
+        "condition": "空腔内的热辐射可以当作光子气来处理，设腔的内表面对光子是完全反射面。",
+        "specific_questions": "试导出光子气在绝热过程中压强 $p$ 与空腔体积 $V$ 之间满足的关系式（绝热过程方程）。",
+        "solution": "由热力学第一定律，在绝热过程中，有$$\\mathrm{d} U=-p \\mathrm{~d} V$$它用于光子气，因 $U=u(T) V$ ，故有$$V \\mathrm{~d} u+u \\mathrm{~d} V=-p \\mathrm{~d} V$$把第 1 问的结果 $u=3 p$ 代入，得$$3 V \\mathrm{~d} p+3 p \\mathrm{~d} V=-p \\mathrm{~d} V$$即$$\\frac{\\mathrm{d} p}{p}=-\\frac{4}{3} \\frac{\\mathrm{~d} V}{V}$$积分，得光子气的绝热过程方程为$$p V^{\\frac{4}{3}}=p_{0} V_{0}^{\\frac{4}{3}}=\\text { 常量 }$$",
+        "final_answer": "$$p V^{\\frac{4}{3}}$$"
+    },
+    {
+        "question_number": "6.1_ff452b690f",
+        "condition": "混合理想气体处于温度为 $T$ 的平衡态，其中任意两个质量分别为 $m_{1}$ 和 $m_{2}$ 的分子之间的相对速度定义为 $\\boldsymbol{u} = \\boldsymbol{v}_{1} - \\boldsymbol{v}_{2}$ ，式中 $\\boldsymbol{v}_{1}$ 和 $\\boldsymbol{v}_{2}$ 分别是 $m_{1}$ 和 $m_{2}$ 的速度。",
+        "specific_questions": "求相对速率的方均根值 $\\sqrt{u^{2}}$。",
+        "solution": "考虑系统中的两个分子 $m_{1}$ 和 $m_{2}$ ，它们的折合质量 $\\mu$ 为 $$ \\mu = \\frac{m_{1} m_{2}}{m_{1} + m_{2}} $$ 相对速度 $u$ 的动能关系为 $$ \\frac{1}{2} m_{1} v_{1}^{2} + \\frac{1}{2} m_{2} v_{2}^{2} = \\frac{1}{2} (m_{1} + m_{2}) V^{2} + \\frac{1}{2} \\mu u^{2} $$ 计算相对速率的方均根值： $$ \\overline{u^{2}} = \\frac{3 k T}{m_{1}} + \\frac{3 k T}{m_{2}} = \\frac{3 k T}{\\mu} $$ 即 $$ \\sqrt{u^{2}} = \\sqrt{\\frac{3 k T}{\\mu}} $$",
+        "final_answer": "$$\\sqrt{\\frac{3 k T}{\\mu}}$$"
+    },
+    {
+        "question_number": "6.2_64b556cb99",
+        "condition": "混合理想气体处于温度为 $T$ 的平衡态，其中任意两个质量分别为 $m_{1}$ 和 $m_{2}$ 的分子之间的相对速度定义为 $\\boldsymbol{u} = \\boldsymbol{v}_{1} - \\boldsymbol{v}_{2}$ ，式中 $\\boldsymbol{v}_{1}$ 和 $\\boldsymbol{v}_{2}$ 分别是 $m_{1}$ 和 $m_{2}$ 的速度。",
+        "specific_questions": "求相对速率的平均值 $\\bar{u}$。",
+        "solution": "通过麦克斯韦分布，系统的相对速度$u$的概率分布函数$f(u)$为麦克斯韦速率分布： $$ f(u) = 4 \\pi \\left( \\frac{\\mu}{2 \\pi k T} \\right)^{\\frac{3}{2}} \\mathrm{e}^{-\\frac{1}{2} \\mu u^{2} / k T} u^{2} $$ 相对速率的平均值为： $$ \\bar{u} = \\sqrt{\\frac{8 k T}{\\pi \\mu}} $$ 相当于一个具有折合质量 $\\mu$ 的分子的平均速率。",
+        "final_answer": "$$\\sqrt{\\frac{8 k T}{\\pi \\mu}}$$"
+    },
+    {
+        "question_number": "7.1_da4034e888",
+        "condition": "理想气体处于平衡态，其分子平动动能为 $E$ ，分子最概然平动动能为 $E_{\\mathrm{p}}$ ，与 $E_{\\mathrm{p}}$ 相应的平动速率为 $v_{0}$ 。",
+        "specific_questions": "试求 $v_{0}$ 与最概然速率 $v_{\\mathrm{p}}$ 的比值。",
+        "solution": "平动动能 $E$ 与速率 $v$ 的关系是\n\n$$\nE=\\frac{1}{2} m v^{2}\n$$\n\n故\n\n$$\n\\mathrm{d} E=m v \\mathrm{~d} v=\\sqrt{2 m E} \\mathrm{~d} v\n$$\n\n平衡态理想气体分子平动动能分布函数 $f(E)$ 与速率分布函数 $f(v)$ 的关系是\n\n$$\nf(E) \\mathrm{d} E=f(v) \\mathrm{d} v\n$$\n\n由以上三式，得\n\n$$\n\\begin{aligned}\nf(E) & =f(v) \\frac{\\mathrm{d} v}{\\mathrm{~d} E}=\\frac{f(v)}{\\sqrt{2 m E}} \\\\\n& =4 \\pi\\left(\\frac{m}{2 \\pi k T}\\right)^{\\frac{3}{2}} \\mathrm{e}^{-m v^{2} / 2 k T} \\frac{v^{2}}{\\sqrt{2 m E}}=\\frac{2}{\\sqrt{\\pi}}(k T)^{-\\frac{3}{2}} \\sqrt{E} \\mathrm{e}^{-E / k T}\n\\end{aligned}\n$$\n\n因 $f(E)$ 总为正，且在 $E=0$ 和 $E=\\infty$ 处为零，故若 $f(E)$ 只有一个极值，则必为极大值，相应的即为最概然平动动能 $E_{\\mathrm{p}}$ 。\n$f(E)$ 的极值应满足\n\n$$\n\\frac{\\mathrm{d} f(E)}{\\mathrm{d} E}=0\n$$\n\n即\n\n$$\n\\frac{1}{2} E^{-\\frac{1}{2}} \\mathrm{e}^{-E / k T}+\\sqrt{E}\\left(-\\frac{1}{k T}\\right) \\mathrm{e}^{-E / k T}=0\n$$\n\n满足上式的最概然平动动能为\n\n$$\nE_{\\mathrm{p}}=\\frac{1}{2} k T\n$$\n\n与 $E_{\\mathrm{p}}$ 对应的平动速率 $v_{0}$ 为\n\n$$\nE_{\\mathrm{p}}=\\frac{1}{2} m v_{0}^{2}\n$$\n\n即\n\n$$\nv_{0}=\\sqrt{\\frac{k T}{m}}\n$$\n\n故 $v_{0}$ 与最概然速率 $v_{\\mathrm{p}}$ 之比为\n\n$$\nv_{0}: v_{\\mathrm{p}}=\\sqrt{\\frac{k T}{m}}: \\sqrt{\\frac{2 k T}{m}}=1: \\sqrt{2}\n$$",
+        "final_answer": "1: \\sqrt{2}"
+    },
+    {
+        "question_number": "8.1_aa8cf3e92e",
+        "condition": "设热气球具有不变的容积 $V_{B}=1.1 \\mathrm{~m}^{3}$ ，气球蒙皮体积与 $V_{B}$ 相比可忽略不计，蒙皮的质量为 $m_{H}=0.187 \\mathrm{~kg}$ 。在外界气温 $t_{1}=20^{\\circ} \\mathrm{C}$ ，正常外界大气压 $p_{1}=1.013 \\times 10^{3} \\mathrm{~Pa}$ 的条件下，气球开始升空，此时外界大气的密度为 $\\rho_{1}=1.2 \\mathrm{~kg} / \\mathrm{m}^{3}$ 。",
+        "specific_questions": "试问气球内部的热空气的温度 $t_{2}$ 应为多少，才能使气球刚好浮起。",
+        "solution": "刚好浮起的条件是，气球蒙皮质量 $m_{H}$ 与球内温度为 $t_{2}$ 的热空气质量 $m_{2}$ 之和，等于被排开的温度为 $t_{1}$ 的空气质量 $m_{1}$ ，即\n$$\nm_{2}+m_{H}=m_{1}\n$$\n即\n$$\n\\rho_{2} V_{B}+m_{H}=\\rho_{1} V_{B}\n$$\n由此得出\n$$\n\\rho_{2}=\\rho_{1}-\\frac{m_{H}}{V_{B}}\n$$\n把有关数据 $\\rho_{1}=1.2 \\mathrm{~kg} / \\mathrm{m}^{3}, m_{H}=0.187 \\mathrm{~kg}, V_{B}=1.1 \\mathrm{~m}^{3}$ 代入，得\n$$\n\\rho_{2}=1.03 \\mathrm{~kg} / \\mathrm{m}^{3}\n$$\n由理想气体状态方程\n$$\n\\rho=\\frac{\\mu \\rho}{K T}\n$$\n因热气球下端开口，内外压强相同均为 $p$ ，但内外温度不同，分别为 $T_{2}$ 和 $T_{1}$ ，故有\n$$\n\\frac{\\rho_{2}}{\\rho_{1}}=\\frac{T_{1}}{T_{2}}\n$$\n气球内热空气温度为\n$$\nT_{2}=\\frac{\\rho_{1}}{\\rho_{2}} T_{1}=\\frac{\\rho_{1}}{\\rho_{2}}\\left(t_{1}+273.15\\right)=341.53 \\mathrm{~K}\n$$\n即\n$$\nt_{2}=68.38\n$$",
+        "final_answer": "68.38"
+    },
+    {
+        "question_number": "8.2_cabb4f968d",
+        "condition": "设热气球具有不变的容积 $V_{B}=1.1 \\mathrm{~m}^{3}$ ，气球蒙皮体积与 $V_{B}$ 相比可忽略不计，蒙皮的质量为 $m_{H}=0.187 \\mathrm{~kg}$ 。在外界气温 $t_{1}=20^{\\circ} \\mathrm{C}$ ，正常外界大气压 $p_{1}=1.013 \\times 10^{3} \\mathrm{~Pa}$ 的条件下，气球开始升空，此时外界大气的密度为 $\\rho_{1}=1.2 \\mathrm{~kg} / \\mathrm{m}^{3}$ 。",
+        "specific_questions": "先把气球系牢在地面上，并把其内部的空气加热到稳定温度 $t_{3}=110^{\\circ} \\mathrm{C}$ ，试问气球释放升空时的初始加速度 $a$ 等于多少?（不考虑空气的阻力．）",
+        "solution": "气球内热空气温度为 $t_{3}=110^{\\circ} \\mathrm{C}$ 时，热空气密度为\n$$\n\\rho_{3}=\\frac{T_{1}}{T_{3}} \\rho_{1}=\\frac{t_{1}+273.15}{t_{3}+273.15} \\rho_{1}=0.918 \\mathrm{~kg} / \\mathrm{m}^{3}\n$$\n热气球所受升力（浮力减去重力）为\n$$\nF_{\\mathrm{fi}}=\\left[\\rho_{1} V_{\\mathrm{fi}}-\\left(\\rho_{3} V_{B}+m_{H}\\right)\\right]_{g}=1.2 \\mathrm{~N}\n$$\n故热气球升空时的初始加速度为\n$$\na=\\frac{F_{f_{1}}}{\\rho_{3} V_{B}+m_{H}}=1.003 \\mathrm{~m} / \\mathrm{s}^{2}\n$$",
+        "final_answer": "1.003"
+    },
+    {
+        "question_number": "8.3_60f17d121c",
+        "condition": "设热气球具有不变的容积 $V_{B}=1.1 \\mathrm{~m}^{3}$ ，气球蒙皮体积与 $V_{B}$ 相比可忽略不计，蒙皮的质量为 $m_{H}=0.187 \\mathrm{~kg}$ 。在外界气温 $t_{1}=20^{\\circ} \\mathrm{C}$ ，正常外界大气压 $p_{1}=1.013 \\times 10^{3} \\mathrm{~Pa}$ 的条件下，气球开始升空，此时外界大气的密度为 $\\rho_{1}=1.2 \\mathrm{~kg} / \\mathrm{m}^{3}$ 。",
+        "specific_questions": "将气球下端通气口扎紧，使气球内部的空气密度保持恒定。在内部空气保持稳定温度 $t_{3}$ $=110^{\\circ} \\mathrm{C}$ 的情况下，气球升离地面，进人温度恒为 $20^{\\circ} \\mathrm{C}$ 的等温大气层中。试问，在这些条件下，气球上升到多少高度 $h$ 能处于力学平衡状态。",
+        "solution": "当热气球内空气温度为 $t_{3}$ 时，气球的平均密度为\n$$\n\\bar{\\rho}=\\frac{\\rho_{3} V_{B}+m_{H}}{V_{B}}=1.088 \\mathrm{~kg} / \\mathrm{m}^{3}\n$$\n当气球上升到离地面 $h$ 的高度处，外部空气密度 $\\rho_{h}$ 与地面空气密度 $\\rho_{1}$ 的关系遵循玻尔兹曼分布，为\n$$\n\\rho_{h}=\\rho_{1} \\mathrm{e}^{-m g h / k T_{1}}\n$$\n其中 $m$ 为空气分子的质量. 故有\n$$\nh=\\frac{k T_{1}}{m g} \\ln \\frac{\\rho_{1}}{\\rho_{h}}\n$$\n把上式右边分子与分母都乘以地面空气分子的数密度 $n_{1}$ ，并利用\n$$\nn_{1} k T_{1}=p_{1}, \\quad n_{1} m=\\rho_{1}\n$$\n得出\n$$\nh=\\frac{\\rho_{1}}{\\rho_{1} g} \\ln \\frac{\\rho_{1}}{\\rho_{h}}\n$$\n气球在 $h$ 处达到平衡，要求\n$$\n\\rho_{h}=\\bar{\\rho}\n$$\n故得\n$$\nh=\\frac{\\rho_{1}}{\\rho_{1} g} \\ln \\frac{\\rho_{1}}{\\rho}=844 \\mathrm{~m}\n$$",
+        "final_answer": "844"
+    },
+    {
+        "question_number": "9_d5bf1bb5fb",
+        "condition": "取地面为重力势能零点。试估算等温大气的重力势能与热运动能量之比。设大气分子都只有平动和转动的动能已被激发。",
+        "specific_questions": "",
+        "solution": "设等温大气区域是高度为$H$，底面积为$S$的柱体，大气温度为$T$，取$z$轴坚直向上，原点$z = 0$在地面上。设大气中第$i$种组元分子的质量为$m_i$，该组元在$z=0$处的分子数密度为$n_{0i}$。由玻尔兹曼分布，在$z$到$(z+\text{d}z)$范围，第$i$组元的分子数$\text{d}N_i$为 $$\text{d}N_i=n_{0i}e^{-m_igz/kT}S\text{d}z$$ 因$\text{d}N_i$随$z$按指数衰减，离地较高处的大气已很稀薄，等温大气的高度实际上是有限的，可认为等温大气高度$H$远小于地球半径$R$，故$g$为常量。这$\text{d}N_i$个分子所具有的重力势能$\text{d}E_{pi}$为 $$\text{d}E_{pi}=(m_igz)\text{d}N_i$$ 于是等温大气第$i$种组元分子的平均重力势能为 $$\\bar{\\epsilon}_{pi}=\\frac{\\int_{0}^{H}\\text{d}E_{pi}}{\\int_{0}^{H}\\text{d}N_i}=\\frac{\\int_{0}^{H}(m_igz)e^{-m_igz/kT}S\\text{d}z}{\\int_{0}^{H}e^{-m_igz/kT}S\\text{d}z}$$ 等温大气的高度$H$虽远小于地球半径，仍是个大量，在计算上式的积分时，可近似取$H \\approx \\infty$，则有 $$\\bar{\\epsilon}_{pi}=\\frac{\\int_{0}^{\\infty}m_igze^{-m_igz/kT}\\text{d}z}{\\int_{0}^{\\infty}e^{-m_igz/kT}\\text{d}z}=\\frac{m_ig\\left(\\frac{kT}{m_ig}\\right)^{2}}{\\frac{kT}{m_ig}}=kT$$ 上式表明，$\\bar{\\epsilon}_{pi}$与组元$i$无关，即各组元分子的平均重力势能都是$kT$。因此，等温大气中分子的平均重力势能$\\bar{\\epsilon}_{p}$即为$kT$ $$\\bar{\\varepsilon}_{p}=kT$$ 大气成分复杂，但主要是氮气和氧气，都是双原子分子，在只有平动和转动的动能被激发时，分子的平均热运动能量均为 $$\\bar{\\varepsilon}_{k}=\\frac{5}{2}kT$$ 因此，等温大气中分子平均重力势能$\\bar{\\varepsilon}_{p}$与分子平均热运动能量$\\bar{\\varepsilon}_{k}$之比为 $$\\bar{\\varepsilon}_{p}:\\bar{\\varepsilon}_{k}=kT:\\frac{5}{2}kT=2:5$$",
+        "final_answer": "2:5"
+    },
+    {
+        "question_number": "10.1_c1910bf88a",
+        "condition": "把大气看作理想气体，设在大气范围内重力加速度 $g$ 为常量，设海平面 $z=0$ 处的大气温度为 $T_{0}$。",
+        "specific_questions": "从力平衡观点出发，试导出 $z$ 处压强随高度的变化率 $\\frac{\\mathrm{d} p}{\\mathrm{~d} z}$ 与 $z$ 处的压强 $p$ 和温度 $T$ 的关系。",
+        "solution": "设大气为理想气体, 故有$p=n k T$，其中 $p, T, n$ 分别是 $z$ 处大气的压强，温度，分子数密度。在 $z$ 处，考虑一层面积 $S$ ，厚度为 $\\mathrm{d} z$ 的薄层大气，其受到的重力为 $n(S \\mathrm{~d} z) m g(m$ 是空气分子的质量）。因上下压强差而提供的竖直向上的作用力为 $[p(z)-p(z+\\mathrm{d} z)] S = -S \\mathrm{~d} p$。由力平衡，得 $n S \\mathrm{~d} z m g = -S \\mathrm{~d} p$，即 $\\frac{\\mathrm{d} p}{\\mathrm{~d} z} = -n m g$ 利用 $p = n k T$，代入即得 $\\frac{\\mathrm{d} p}{\\mathrm{~d} z} = -\\frac{m g p}{k T} = -\\frac{\\mu g p}{R T}$，其中 $\\mu = 29.0 \\times 10^{-3} \\mathrm{~kg} / \\mathrm{mol}$ 为大气的平均摩尔质量。",
+        "final_answer": "$$-\\frac{\\mu g p}{R T}$$"
+    },
+    {
+        "question_number": "10.2_063ec47a18",
+        "condition": "把大气看作理想气体，设在大气范围内重力加速度 $g$ 为常量，设海平面 $z=0$ 处的大气温度为 $T_{0}$。",
+        "specific_questions": "设大气是等温的，且 $t_{0}=0 \\mathrm{C}$ ，试计算半数分子处于其下的高度 $h$。",
+        "solution": "在等温条件 $T = T_{0}$ 下，$\\frac{\\mathrm{d} p}{\\mathrm{~d} z} = -\\frac{m g p}{k T_{0}}$。积分可得 $n(z) = n_{0} \\mathrm{e}^{-\\frac{\\mu g z}{R T_{0}}}$。设从海平面 $z = 0$ 到高度 $z = h$ 处的大气分子为全部之半则有 $\\int_{0}^{h} n(z) \\mathrm{d} z = \\frac{1}{2} \\int_{0}^{\\infty} n(z) \\mathrm{d} z$，代入上式，得 $\\mathrm{e}^{ \\frac{-\\mu g h}{R T_{0}}} = \\frac{1}{2}$，故 $h = \\frac{R T_{0}}{\\mu g} \\ln 2 \\approx 5.5 \\times 10^{3} \\mathrm{~m}$。",
+        "final_answer": "$$5.5 \\times 10^{3}$$"
+    },
+    {
+        "question_number": "10.3_68d588f5a2",
+        "condition": "把大气看作理想气体，设在大气范围内重力加速度 $g$ 为常量，设海平面 $z=0$ 处的大气温度为 $T_{0}$。",
+        "specific_questions": "设大气是绝热的，且 $t_{0}=0 \\mathrm{C}$ ，绝热指数 $\\gamma=\\frac{7}{5}$ 。试计算大气层的高度 $H$。",
+        "solution": "设大气绝热，$p$ 与 $T$ 逐渐随 $z$ 变化，应满足关系 $p T^{\\frac{1 - \\gamma}{\\gamma}} = \\text{const}$。与 $\\frac{\\mathrm{d} p}{\\mathrm{~d} z} = -\\frac{\\mu g p}{R T}$ 结合消去 $T$，积分并取 $p = 0$ 得到大气的高度 $$H = \\frac{\\gamma}{\\gamma - 1} \\frac{R T_{0}}{\\mu g} \\approx 28.0 \\times 10^{3} \\mathrm{~m}$$。",
+        "final_answer": "$$28.0 \\times 10^{3}$$"
+    },
+    {
+        "question_number": "11.1_c66d55c341",
+        "condition": "设地球的大气等温，温度为 $T$ ，地面附近的分子数密度为 $n_{0}$ ，大气分子的平均质量为 $m$ 。如果认为，在距地面高度为 $h$ 处的大气分子沿某方向（当然不包括会与地面相碰的那些方向）的速度，达到或超过该处人造卫星绕地球作圆运动的速度（在不计空气阻力条件下）时，该分子便能沿此方向逃离大气而去。设地球半径为 $R$ ，地面的重力加速度为 $g$ 。",
+        "specific_questions": "试求在 $h$ 处，沿任一允许方向，单位时间通过单位垂直截面逃离大气的分子数。",
+        "solution": "在距离地面高度为 $h$ 处，作圆运动的人造卫星的速度 $v_{0}$ 满足以下关系式，$$\\frac{mgv_{0}^{2}}{R+h}=\\frac{G M m}{(R+h)^{2}}$$其中 $M$ 为地球质量. 由上式得出$$v_{0}^{2}=\\frac{G M}{R+h}$$地面的重力加速度为$$g=\\frac{G M}{R^{2}}$$由以上两式，得$$v_{0}^{2}=\\frac{R^{2} g}{R+h}$$在坐标 $x$ 方向的速率分布为麦克斯韦一维速率分布函数$$f\\left(v_{x}\\right)=\\left(\\frac{m}{2 \\pi k T}\\right)^{\\frac{1}{2}} e^{-\\frac{mv_{x}^{2}}{2kT}}$$分子在 $h$ 处的数密度为$n(h)$，由玻耳兹曼分布得$$n(h)=n_{0} e^{-\\frac{mghR}{kT(R+h)}}$$沿任一方向单位时间通过单位垂直截面逃离大气的分子数为$$\\frac{\\mathrm{d} N}{\\mathrm{~d} t \\mathrm{~d} S}=n(h)\\left(\\frac{k T}{2 \\pi m}\\right)^{\\frac{1}{2}} e^{-\\frac{mv_{0}^{2}}{2kT}}=n_{0}e^{-\\frac{mgR(R+2h)}{2kT(R+h)}}\\left(\\frac{k T}{2 \\pi m}\\right)^{\\frac{1}{2}} $$",
+        "final_answer": "n_{0}\\left(\\frac{kT}{2\\pi m}\\right)^{1/2} e^{-mghR(R+2h)/2kT(R+h)}"
+    },
+    {
+        "question_number": "14.1_4edf673a6f",
+        "condition": "从分子某次与其他分子碰撞后开始计算其自由程 $\\lambda$ ，其平均值 $\\bar{\\lambda}$ 称为平均自由程。设分子间的碰撞具有无后效应性，即在 $\\lambda$ 到 $(\\lambda+\\mathrm{d} \\lambda)$ 区间被碰撞的概率与前面已经过的路程 $\\lambda$ 无关。",
+        "specific_questions": "求分子经 $\\lambda$ 路程尚未被碰撞的概率 $F(\\lambda)$ ，以及自由程为 $\\lambda$ 的概率密度 $f(\\lambda)$ 。",
+        "solution": "分子在 $\\lambda$ 到 $(\\lambda+\\mathrm{d} \\lambda)$ 区间被碰的概率 $\\mathrm{d} P$ 与 $\\lambda$ 无关，故有$$\n\\mathrm{d} P = \\frac{\\mathrm{d} \\lambda}{\\alpha}$$设分子经 $\\lambda$ 路程尚未被碰的概率为 $F(\\lambda)$ , 则$$\nF(\\lambda+\\mathrm{d} \\lambda) = F(\\lambda)(1-\\mathrm{d} P) = F(\\lambda) - \\frac{1}{\\alpha} F(\\lambda) \\mathrm{d} \\lambda$$由此得$$\n\\mathrm{d} F = -\\frac{1}{\\alpha} F(\\lambda) \\mathrm{d} \\lambda$$初条件为 $F(0) = 1$ ，积分得$$\nF(\\lambda) = \\mathrm{e}^{-\\lambda / \\alpha}$$自由程为 $\\lambda$ 的概率密度$$\nf(\\lambda) = \\frac{1}{\\alpha} F(\\lambda)$$带入 $F(\\lambda)$ 结果得$$\nf(\\lambda) = \\frac{1}{\\alpha} \\mathrm{e}^{-\\lambda / \\alpha}$$",
+        "final_answer": "$$\\frac{1}{\\alpha} \\mathrm{e}^{-\\lambda / \\alpha}$$"
+    },
+    {
+        "question_number": "14.2_bedff0c6e8",
+        "condition": "从分子某次与其他分子碰撞后开始计算其自由程 $\\lambda$ ，其平均值 $\\bar{\\lambda}$ 称为平均自由程。设分子间的碰撞具有无后效应性，即在 $\\lambda$ 到 $(\\lambda+\\mathrm{d} \\lambda)$ 区间被碰撞的概率与前面已经过的路程 $\\lambda$ 无关。",
+        "specific_questions": "求分子在某次碰撞后，先经无碰撞的路程 $\\lambda_{0}$ ，再经 $\\lambda$ 路程末被碰撞的概率 $F^{*}\\left(\\lambda_{0}, \\lambda\\right)$ ，以及不计 $\\lambda_{0}$ 的平均自由程 $\\bar{\\lambda}\\left(\\lambda_{0}\\right)$ 。",
+        "solution": "分子先经 $\\lambda_{0}$ 路程末被碰撞的概率为 $F(\\lambda_{0})$ ，分子经 $(\\lambda_{0}+\\lambda)$ 路程末被碰撞的概率 $F(\\lambda_{0}+\\lambda)$ ，有$$\nF(\\lambda_{0}+\\lambda) = F(\\lambda_{0}) F^{*}(\\lambda_{0}, \\lambda)$$故$$\nF^{*}(\\lambda_{0}, \\lambda) = \\frac{F(\\lambda_{0}+\\lambda)}{F(\\lambda_{0})} = \\mathrm{e}^{-\\lambda / \\bar{\\lambda}}$$分子在某次碰撞后从新起点计算自由程 $\\lambda$ 的概率密度为$$\nf^{*}\\left(\\lambda_{0}, \\lambda\\right) = \\frac{1}{\\alpha} \\mathrm{e}^{-\\lambda / \\bar{\\lambda}} = f(\\lambda)$$计算自由程平均值$$\n\\bar{\\lambda}(\\lambda_{0}) = \\bar{\\lambda}$$",
+        "final_answer": "$$\\bar{\\lambda}$$"
+    },
+    {
+        "question_number": "15.1_00bec79920",
+        "condition": "理想气体处于平衡态，分子热运动平均速率为 $\\bar{v}$ ，平均自由程为 $\\bar{\\lambda}$ ，假设理想气体占据的容器空间足够大，设 $R \\gg \\bar{\\lambda}$ ，在本题讨论的时间范围内未与容器壁相碰。已知 $\\bar{v}=5.0 \\times 10^{2} \\mathrm{~m} / \\mathrm{s}, \\bar{\\lambda}=3.0 \\times 10^{-7} \\mathrm{~m}, R=2 \\mathrm{~m}$ 。",
+        "specific_questions": "经过多长时间 $t$ ，分子所在位置与原点 $O$ 相距为 $R$ 。",
+        "solution": "由于碰撞频繁，热运动的分子走的是曲折的路线，不能用 $R$ 除以 $\\bar{v}$ 来求 $t$ 。设经过 $N$ 个自由程后，分子与原点相距为 $R$ ，当 $N$ 足够大时，从统计上考虑， $R$ 必定与平均自由程 $\\bar{\\lambda}$ 有关。分子行经 $N$ 个自由程所需的时间 $t$ 必定与平均碰撞频率 $\\bar{Z}$ 有关， $\\bar{Z}$ 与 $\\bar{v}$ 和 $\\bar{\\lambda}$ 有关。",
+        "final_answer": "$$t=\\frac{R^{2}}{2 \\bar{v} \\bar{\\lambda}}$$"
+    },
+    {
+        "question_number": "15.2_96c11921c6",
+        "condition": "理想气体处于平衡态，分子热运动平均速率为 $\\bar{v}$ ，平均自由程为 $\\bar{\\lambda}$ 。已知 $\\bar{v}=5.0 \\times 10^{2} \\mathrm{~m} / \\mathrm{s}, \\bar{\\lambda}=3.0 \\times 10^{-7} \\mathrm{~m}, R=2 \\mathrm{~m}$ 。",
+        "specific_questions": "利用 $\\bar{v}$ 、$\\bar{\\lambda}$ 以及 $R$ 的值计算分子前进到 $R=2 \\mathrm{~m}$ 处所需的时间 t 。",
+        "solution": "由公式 $t=\\frac{R^{2}}{2 \\bar{v} \\bar{\\lambda}}$ ，将已知值 $\\bar{v}=5.0 \\times 10^{2} \\mathrm{~m} / \\mathrm{s}, \\bar{\\lambda}=3.0 \\times 10^{-7} \\mathrm{~m}, R=2 \\mathrm{~m}$ 代入，得出分子前进到 $R=2 \\mathrm{~m}$ 处所需的时间。",
+        "final_answer": "$$t=1.3 \\times 10^{4}$$"
+    },
+    {
+        "question_number": "16.1_20226a1776",
+        "condition": "某混合理想气体包含 A 和 B 两种分子，已知 A 和 B 分子的质量、有效直径和数密度分别为 $m_{\\mathrm{A}}$ 和 $m_{\\mathrm{B}}, d_{\\mathrm{A}}$ 和 $d_{\\mathrm{B}}, 以及 n_{\\mathrm{A}}$ 和 $n_{\\mathrm{B}}$ 。在温度为 T 的平衡态下。",
+        "specific_questions": "试求在温度为 T 的平衡态，两种分子各自的平均自由程 $\\bar{\\lambda}_{\\mathrm{A}}$ 和 $\\bar{\\lambda}_{\\mathrm{B}}$ 。",
+        "solution": "A, B 分子各自的平均速率分别为\n\n$$\n\\begin{aligned}\n& \\bar{v}_{\\mathrm{A}}=\\sqrt{\\frac{8 k T}{\\pi m_{\\mathrm{A}}}} \\\\\n& \\bar{v}_{\\mathrm{B}}=\\sqrt{\\frac{8 k T}{\\pi m_{\\mathrm{B}}}}\n\\end{aligned}\n$$\n\nA, B 分子的平均相对速率为\n\n$$\n\\bar{v}_{\\mathrm{AB}}=\\sqrt{\\frac{8 k T}{\\pi \\mu}}\n$$\n\n式中\n\n$$\n\\mu=\\frac{m_{\\mathrm{A}} m_{\\mathrm{B}}}{m_{\\mathrm{A}}+m_{\\mathrm{B}}}\n$$\n\n某个 A 分子与其他 A 分子的平均碰撞频率为\n\n$$\n\\bar{Z}_{\\mathrm{AA}}=\\sqrt{2} \\pi d_{\\mathrm{A}}^{2} \\bar{v}_{\\mathrm{A}} n_{\\mathrm{A}}\n$$\n\n与 B 分子的平均碰撞频率为\n\n$$\n\\bar{Z}_{\\mathrm{AB}}=\\frac{\\pi}{4}\\left(d_{\\mathrm{A}}+d_{\\mathrm{B}}\\right)^{2} \\bar{v}_{\\mathrm{AB}} n_{\\mathrm{B}}\n$$\n\n因此，A 分子的平均碰撞频率为\n\n$$\n\\bar{Z}_{\\mathrm{A}}=\\bar{Z}_{\\mathrm{AA}}+\\bar{Z}_{\\mathrm{AB}}=\\sqrt{2} \\pi d_{\\mathrm{A}}^{2} \\bar{v}_{\\mathrm{A}} n_{\\mathrm{A}}+\\frac{\\pi}{4}\\left(d_{\\mathrm{A}}+d_{\\mathrm{B}}\\right)^{2} \\bar{v}_{\\mathrm{AB}} n_{\\mathrm{B}}\n$$\n\nA 分子的平均自由程为\n\n$$\n\\bar{\\lambda}_{\\mathrm{A}}=\\frac{\\bar{v}_{\\mathrm{A}}}{\\bar{Z}_{\\mathrm{A}}}=\\bar{v}_{\\mathrm{A}} /\\left[\\sqrt{2} \\pi d_{\\mathrm{A}}^{2} \\bar{v}_{\\mathrm{A}} n_{\\mathrm{A}}+\\frac{\\pi}{4}\\left(d_{\\mathrm{A}}+d_{\\mathrm{B}}\\right)^{2} \\bar{v}_{\\mathrm{AB}} n_{\\mathrm{B}}\\right]\n$$\n\n其中\n\n$$\n\\frac{\\bar{v}_{\\mathrm{AB}}}{\\bar{v}_{\\mathrm{A}}}=\\sqrt{\\frac{m_{\\mathrm{A}}+m_{\\mathrm{B}}}{m_{\\mathrm{B}}}}\n$$",
+        "final_answer": "$$\\frac{1}{\\pi}\\left[\\sqrt{2} d_{\\mathrm{A}}^{2} n_{\\mathrm{A}}+\\frac{1}{4}\\left(d_{\\mathrm{A}}+d_{\\mathrm{B}}\\right)^{2} \\sqrt{\\frac{m_{\\mathrm{A}}+m_{\\mathrm{B}}}{m_{\\mathrm{B}}}} n_{\\mathrm{B}}\\right]^{-1}$$"
+    },
+    {
+        "question_number": "16.2_7d8abf8bf5",
+        "condition": "某混合理想气体包含 A 和 B 两种分子，已知 A 和 B 分子的质量、有效直径和数密度分别为 $m_{\\mathrm{A}}$ 和 $m_{\\mathrm{B}}, d_{\\mathrm{A}}$ 和 $d_{\\mathrm{B}}, 以及 n_{\\mathrm{A}}$ 和 $n_{\\mathrm{B}}$ 。在温度为 T 的平衡态下。",
+        "specific_questions": "试求 B 分子的平均自由程 $\\bar{\\lambda}_{\\mathrm{B}}$ 。",
+        "solution": "同理\n\n$$\n\\bar{\\lambda}_{\\mathrm{B}}=\\frac{1}{\\pi}\\left[\\sqrt{2} d_{\\mathrm{B}}^{2} n_{\\mathrm{B}}+\\frac{1}{4}\\left(d_{\\mathrm{A}}+d_{\\mathrm{B}}\\right)^{2} \\sqrt{\\frac{m_{\\mathrm{A}}+m_{\\mathrm{B}}}{m_{\\mathrm{A}}}} n_{\\mathrm{A}}\\right]^{-1}\n$$",
+        "final_answer": "$$\\frac{1}{\\pi}\\left[\\sqrt{2} d_{\\mathrm{B}}^{2} n_{\\mathrm{B}}+\\frac{1}{4}\\left(d_{\\mathrm{A}}+d_{\\mathrm{B}}\\right)^{2} \\sqrt{\\frac{m_{\\mathrm{A}}+m_{\\mathrm{B}}}{m_{\\mathrm{A}}}} n_{\\mathrm{A}}\\right]^{-1}$$"
+    },
+    {
+        "question_number": "17.1_d669d0cdd2",
+        "condition": "在阴极射线管中，即使管腔被抽成很高的真空度，也总是还有一些残余的空气存在。因此，从阴极射出的高速电子在通过管腔时，总有一部分因与空气分子相碰而不能直接射到荧光屏上。设阴极射线管工作时，管腔内的温度为 $27^{\\\\circ} \\\\mathrm{C}$ ，管腔的长度为 20 \\\\mathrm{~cm} 。为了保证有 90\\% 的电子能够不经碰撞直接射到屏上。",
+        "specific_questions": "试问管腔需抽到多高的真空度(用管腔内空气的压强表示)。已知空气分子的有效直径为 3.0 \\times 10^{-10} \\\\mathrm{~m} 。",
+        "solution": "要求 90\\% 电子直接射到屏上，即 $N=0.9 N_{0}$ 。电子的自由程至少为管长 $x=20 \\\\mathrm{~cm}$ 。利用 $$ \\frac{N}{N_{0}}=\\mathrm{e}^{-x / \\\\bar{\u001blambda}} $$ 求出平均自由程 $$ \\\\bar{\u001blambda}=-\\\\frac{20}{\\\\ln 0.9}=190 \\\\mathrm{~cm} $$ 。设电子速度为 $v$ ，平均碰撞频率为 $\\\\ bar{Z}$ ，则 $$ \\\\ bar{\u001blambda}=\\\\frac{v}{\\\\ bar{Z}} $$ 。因电子远小于空气分子， $$ \\\\mathrm{d} N=n(\\pi r^{2}) v \\mathrm{~d} t $$ 。平均碰撞频率为 $$ \\\\ bar{Z}=n \\pi r^{2} v $$ ，则 $$ \\\\ bar{\u001blambda}=\\\\frac{1}{n \\pi r^{2}} $$ 。由于管内为理想气体， $$ n=\\\\frac{p}{k T} $$ ， $$ \\\\ bar{\u001blambda}=\\\\frac{k T}{\\pi r^{2} p} $$ 。所以， $$ p=\\\\frac{k T}{\\pi r^{2} \\\\bar{\u001blambda}} $$ 。代入 $T=300 \\\\mathrm{~K}$, $r=1.5 \\times 10^{-10} \\\\mathrm{~m}$， $\\\\bar{\u001blambda}=190 \\\\mathrm{~cm}$, 玻尔兹曼常量 $k$ ，得出 ",
+        "final_answer": "3.1 \\times 10^{-2}"
+    },
+    {
+        "question_number": "20.1_76b50e8a5f",
+        "condition": "在气象学中，降雨量是指雨区地面雨水的累加高度。今在离地面足够高处有一片厚度可忽略不计的降雨云层，单位时间的降雨量 $Q$ 为常量，假设雨滴在垂直下落过程中近似保持球体形状，半径均为 $R$ ，空气对雨滴的阻力的大小与雨滴的速度大小成正比，比例系数为常量 $\u00075$\n。\n飞虫为沿水平飞行的球体，半径为 $r$ 。\n\n$Q=10 \text{ cm/h} , R=1.00 \text{ mm}, \u00075=3.00 \times 10^{-3} \text{ g/s}, u=10.0 \text{ m/s}, r=4.00 \text{ mm}$ ",
+        "specific_questions": "若在雨区有一飞虫以速率 $u$ 作水平飞行，飞虫也近似看作球体，半径为 $r$ ，试在降雨稳定的持续时间内，确定飞虫在雨中的平均自由程的上限。",
+        "solution": "取 $y$ 轴垂直向下，原点 $y=0$ 在云层。由牛顿第二定律，雨滴的运动方程为 $$m \frac{\text{d} v}{\text{d} t}=m g-\u00075 v$$ 设高度为 $y$ 处的雨滴的平均数密度为 $n(y)$ ，则 $$n(y)=\frac{Q}{\frac{4}{3} \u00075 R^{3} v(y)}$$ 飞虫相对雨滴的速度为 $$u_{\text{相对}}=\t7\b7\b1\u00075\b1 u^{2}+v^{2}(y)$$ 飞虫的平均自由程为 $$\bar{\u00077\u00076\u00075\u00069}\t7 \bar{\u00075\b4}\u00075=\frac{4 R^{3} u v(y)}{3 Q(R+r)^{2} \t7\b7\b1\u00075\b1 u^{2}+v^{2}(y)}$$ 当 $v(y)=v_{\text{max}}=\frac{m g}{a}$ 时，$\bar{\u00077\u00076\u00075}= \bar{\u00077\u00076\u00075}_{\text{max}}=15.5 \text{ m}$。",
+        "final_answer": "15.5"
+    },
+    {
+        "question_number": "20.2_00ed220ee2",
+        "condition": "在气象学中，降雨量是指雨区地面雨水的累加高度。今在离地面足够高处有一片厚度可忽略不计的降雨云层，单位时间的降雨量 $Q$ 为常量，假设雨滴在垂直下落过程中近似保持球体形状，半径均为 $R$ ，空气对雨滴的阻力的大小与雨滴的速度大小成正比，比例系数为常量 $\u00075$\n。飞虫为沿水平飞行的球体，半径为 $r$ 。\n\n$Q=10 \text{ cm/h} , R=1.00 \text{ mm}, \u00075=3.00 \times 10^{-3} \text{ g/s}, u=10.0 \text{ m/s}, r=4.00 \text{ mm}$ ",
+        "specific_questions": "设在某段高度范围内雨滴降落速度可以认为是常量 $v$ ，而飞虫在该区域恰以速率 $u=v$ 飞行，如果飞虫朝任一空间方向飞行的可能性都相同，试问在不同的飞行方向上，飞虫在雨中的平均自由程是否相同？如果相同，试算出这相同的平均自由程；如果不相同，试计算这些平均自由程的平均值。",
+        "solution": "在速度空间以 $u=v$ 为半径作球面，其\"面积\"为 $4 \u00077 \b4^{2}$ 。因飞虫朝任一空间方向飞行的可能性都相同，飞虫在不同方向上的平均自由程的平均值为 $$\b4 \b4 = \t7 \b7\b1\u00075^{2}-3 \u00075(R+r)^{4} u^2 \u00075(3 R^{3} v \b3)\b1 \frac{1}{2} \b1 \b3$$ 结果为 $$\u00077(u)=\b4 \b1 \b1 \b4 \b1 \b1 = \frac{4 \u00075 R^{3} v^{2}}{3 Q(R+r)^{2}}$$",
+        "final_answer": "\b4 \b1 \b1 \b4 \b1 \b1"
+    },
+    {
+        "question_number": "21.1_bbb7df475c",
+        "condition": "把待测气体充入容积为 $V_{0}$ 的烧瓶中，使其压强 $p_{0}$ 大于外界大气压强 $p_{0}$ ，其温度则与外界温度 $T_{0}$ 一致。烧瓶口外连接长为 $L$ 、半径为 $r$ 的水平细阔管与大气相通。细管与烧瓶连接处有阔门，先关闭。打开阔门后瓶内气体经细管向外流出，经过 $\\Delta t$ 时间后再将阔门关闭，测出瓶内气体压强为 $p_{e}$ 。设整个过程中，烧瓶、细管、外界处处温度相同且保持不变。",
+        "specific_questions": "试导出气体粘滞系数 $\\eta$ 的计算公式。",
+        "solution": "设瓶内气体为理想气体，其体积和温度恒定，分别为 $V_{0}$ 和 $T_{0}$ 。任意 $t$ 时刻瓶内气体的压强、质量、密度分别为 $p 、 M 、 \\rho$ ，经瓶口流出的气体的体积流量为 $V_{Q}$ 。根据理想气体状态方程和泊肃叶公式逐步得出，最终得到粘滞系数公式为\n$$ \\eta=\\frac{\\pi r^{4} p_{0} \\Delta t}{8 L V_{0} \\ln \\frac{\\left(p_{e}+p_{0}\\right)\\left(p_{b}-p_{0}\\right)}{\\left(p_{b}+p_{0}\\right)\\left(p_{e}-p_{0}\\right)}} $$。",
+        "final_answer": "$\\frac{\\pi r^{4} p_{0} \\Delta t}{8 L V_{0} \\ln \\frac{\\left(p_{e}+p_{0}\\right)\\left(p_{b}-p_{0}\\right)}{\\left(p_{b}+p_{0}\\right)\\left(p_{e}-p_{0}\\right)}}$"
+    },
+    {
+        "question_number": "21.2_012a991a0b",
+        "condition": "某次实验以二氧化碳为待测气体，实验数据为 $V_{0}=1.0 \\mathrm{~L}, p_{b}=\\frac{1600}{760} \\mathrm{~atm}, P_{0}= \\frac{735}{760} \\mathrm{~atm}, t_{0}=15 \\mathrm{C} ， L=10 \\mathrm{~cm}, r=0.050 \\mathrm{~mm}, \\Delta t=22 \\mathrm{~min}, p_{e}=\\frac{1.350}{760} \\mathrm{~atm}$ 。",
+        "specific_questions": "试利用导出的公式计算二氧化碳的粘滞系数 $\\eta$ 。",
+        "solution": "利用导出的气体粘滞系数公式\n$$ \\eta=\\frac{\\pi r^{4} p_{0} \\Delta t}{8 L V_{0} \\ln \\frac{\\left(p_{e}+p_{0}\\right)\\left(p_{b}-p_{0}\\right)}{\\left(p_{b}+p_{0}\\right)\\left(p_{e}-p_{0}\\right)}} $$\n代入实验数据，进行计算得出结果。",
+        "final_answer": "1.4 \\times 10^{-5}"
+    },
+    {
+        "question_number": "23.1_14985946ac",
+        "condition": "冬季湖面上的冰经两天的时间，厚度从20 \text{ mm} 增为40 \text{ mm} ，在此期间冰层底部与顶部的平均温差为8.0 \text{ K} 。设冰的密度为920 \text{ kg} / \text{m}^{3} ，冰的熔解热为3.20 \times 10^{5} \text{ J} / \text{kg} 。",
+        "specific_questions": "试估算冰的热传导率k。",
+        "solution": "设t=0时刻冰厚h_{0}=20 \text{ mm} ，t时刻冰厚h ，经 \text{d} t时间冰厚增加 \text{d} h ，故热量为 \n$$ \text{d} Q=L \rho S \text{d} h $$  \n式中L为冰的熔解热，\rho 为冰的密度，S为湖面面积。 \text{d} Q通过冰层传送到上方的低温空气中去，近似假设这些热量是在同一时间内传递的，则有 \n$$ \text{d} Q=k \frac{\triangle T}{h} S \text{d} t $$ \n式中 \triangle T是冰的底部与顶部的温差。由以上两式，得 \n$$ \bigg(k \frac{\triangle T}{L \rho}\bigg) \text{d} t=h \text{d} h $$\n积分,得 \n$$ k \frac{\triangle T}{L \rho} t=\frac{1}{2}(h^{2}-h_{0}^{2}) $$\n即 \n$$ k=\frac{L \rho(h^{2}-h_{0}^{2})}{2 t \triangle T} $$\n把h=40 \text{ mm}, t=2 \text{ d} ，以及其他数据代入，得 \n$$k=0.13 \text{ W} /(\text{m} \text{ k})$$",
+        "final_answer": "0.13"
+    },
+    {
+        "question_number": "24.1_d53f474529",
+        "condition": "用同一种物质铸造出质量相同的实心球 A 和立方体 B ，将它们加热到 $220$ 度, 然后都在 $20$ 度的环境中冷却。设 A 和 B 的热损耗率（单位时间向外散发的热量）均与表面积以及各自与环境的温度差成正比，且比例系数相同。",
+        "specific_questions": "试用 A 在降温过程中的温度 $\\tau_{A}$ 来表述 B 在降温过程中的温度 $\\tau_{B}$ 。",
+        "solution": "A 和 B 的热损耗率为\n$$\n-\\frac{\\mathrm{d} Q}{\\mathrm{~d} t}=k S\\left(\\tau-\\tau_{\\mathrm{env}}\\right)\n$$\n式中 $S$ 和 $\\tau$ 是 A 或 B 的表面积和温度，$\\tau_{\\mathrm{env}}$ 是环境温度，$t$ 是时间。因 A 或 B 为同种物质且质量 $m$ 相同，故有\n\n$$\n-\\mathrm{d} Q=m c(-\\mathrm{d} \\tau)\n$$\n式中 $c$ 是比热。由上式消去 $\\mathrm{d} Q$，得 A 或 B 的温度 $\\tau$ 随时间 $t$ 的变化为\n\n$$\n\\frac{\\mathrm{d} \\tau}{\\tau-\\tau_{\\mathrm{env}}}=-\\frac{k S}{m c} \\mathrm{~d} t\n$$\n积分得\n\n$$\n\\tau-\\tau_{\\mathrm{env}}=\\left(\\tau_{0}-\\tau_{\\mathrm{env}}\\right) \\mathrm{e}^{-\\frac{k S}{m c} t}\n$$其中 $\\tau_{0}$ 是初始温度。对于球和立方体，设它们表面积分别为 $S_A$ 和 $S_B$，积分得到:\n\n$$\n\\left\\{\\begin{array}{l}\n\\tau_{\\mathrm{A}}-\\tau_{\\mathrm{env}}=\\left(\\tau_{0}-\\tau_{\\mathrm{env}}\\right)\\mathrm{e}^{-\\frac{k S_{A}}{m c} t} \\\\\n\\tau_{\\mathrm{B}}-\\tau_{\\mathrm{env}}=\\left(\\tau_{0}-\\tau_{\\mathrm{env}}\\right)\\mathrm{e}^{-\\frac{k S_{B}}{m c} t}\n\\end{array}\\right.\n$$消去 $t$，得\n\n$$\n\\tau_{\\mathrm{B}}-\\tau_{\\mathrm{env}}=\\left(\\tau_{0}-\\tau_{\\mathrm{env}}\\right)\\left(\\frac{\\tau_{\\mathrm{A}}-\\tau_{\\mathrm{env}}}{\\tau_{0}-\\tau_{\\mathrm{env}}}\\right)^\\frac{S_{B}}{S_{A}}\n$$将 $S_{A}=4 \\pi R^2$, $R=(3V/4\\pi)^{1/3}$, $S_{B}=6a^2$, $a=V^{1/3}$ 代入得到\n\n$$\\frac{S_{B}}{S_{A}}=1.24$$代入并求解得到:\n\n$$\n\\tau_{\\mathrm{B}}=20+0.28\\left(\\tau_{\\mathrm{A}}-20\\right)^{1.24}\n$$",
+        "final_answer": "$$20+0.28\\left(\\tau_{\\mathrm{A}}-20\\right)^{1.24}$$"
+    },
+    {
+        "question_number": "25.1_fc8ba0f97d",
+        "condition": "半径为 $R_{1}$ 的球体内有供能装置，使之成为高温热源。在球体之外包着导热的匀质球壳层A，它的内半径为 $R_{1}$ ，外半径为 $R_{2}$ ，导热系数处处相同，为常量 $k$ 。球壳层外是另一均匀热介质。当达到稳定的热传导时，内球温度恒为 $T_{1}$ ，球壳层 $A$ 外的温度恒为 $T_{2}$ ，且 $T_{2}<T_{1}$ 。",
+        "specific_questions": "试确定球壳层 A 中温度的径向分布.",
+        "solution": "热传导公式为\n\n$$\nd Q=-k\\left(\\frac{\\mathrm{~d} T}{\\mathrm{~d} r}\\right) \\mathrm{~d} S \\mathrm{~d} t\n$$\n\n单位时间通过球壳层中任一半径为 $r$ 的球面 $S_{r}$ 的热量为\n\n$$\n\\frac{\\mathrm{d} Q}{\\mathrm{~d} t}=-k\\left(\\frac{\\mathrm{~d} T}{\\mathrm{~d} r}\\right) \\cdot 4 \\pi r^{2}\n$$\n\n当热传导达到稳定时，这一量与 $r$ 无关，记为常数 $C_{0}$：\n\n$$\n\\frac{\\mathrm{d} Q}{\\mathrm{~d} t}=C_{0}\n$$\n\n带入上式可得：\n\n$$\n\\left(\\frac{\\mathrm{~d} T}{\\mathrm{~d} r}\\right) r^{2}=-\\frac{C_{0}}{4 \\pi k}=C\n$$\n\n积分后得到温度分布：\n\n$$\nT=T_{1}+C\\left(\\frac{1}{R_{1}}-\\frac{1}{r}\\right)\n$$\n\n考虑 $r=R_{2}$ 处的温度 $T=T_{2}$, 可求得常量 $C$ 为：\n\n$$\nC=\\frac{R_{1} R_{2}}{R_{2}-R_{1}}\\left(T_{2}-T_{1}\\right)\n$$\n\n代入即得球壳层 A 中温度的径向分布：\n\n$$\nT=T_{1}+\\frac{R_{1} R_{2}}{R_{2}-R_{1}}\\left(T_{2}-T_{1}\\right)\\left(\\frac{1}{R_{1}}-\\frac{1}{r}\\right)\n$$",
+        "final_answer": "$$T = T_{1}+\\frac{R_{1} R_{2}}{R_{2}-R_{1}}\\left(T_{2}-T_{1}\\right)\\left(\\frac{1}{R_{1}}-\\frac{1}{r}\\right)$$"
+    },
+    {
+        "question_number": "25.2_67eadec7e6",
+        "condition": "半径为 $R_{1}$ 的球体内有供能装置，使之成为高温热源。在球体之外包着导热的匀质球壳层A，它的内半径为 $R_{1}$ ，外半径为 $R_{2}$ ，导热系数处处相同，为常量 $k$ 。球壳层外是另一均匀热介质。当达到稳定的热传导时，内球温度恒为 $T_{1}$ ，球壳层 $A$ 外的温度恒为 $T_{2}$ ，且 $T_{2}<T_{1}$ 。",
+        "specific_questions": "试求单位时间内，内球中的供能装置应提供的能量。",
+        "solution": "根据热量传导稳定，单位时间内通过球壳层的热量与 $r$ 无关。因此：\n\n$$\n\\frac{\\mathrm{d} Q}{\\mathrm{~d} t}=C_{0}=-4 \\pi k C\n$$\n\n其中 $C = \\frac{R_{1} R_{2}}{R_{2}-R_{1}}(T_{2}-T_{1})$。\n因此：\n\n$$\n\\frac{\\mathrm{d} Q}{\\mathrm{~d} t} = 4 \\pi k \\frac{R_{1} R_{2}}{R_{2}-R_{1}}(T_{1}-T_{2})\n$$",
+        "final_answer": "$$4 \\pi k \\frac{R_{1} R_{2}}{R_{2}-R_{1}}(T_{1}-T_{2})$$"
+    },
+    {
+        "question_number": "27_11d3ccab06",
+        "condition": "沿 $x$ 轴在 $x=0$ 到 $x=L$ 之间放一段长为 $L$ 截面积为 $S$ 的均匀柱体, 它与外界绝热, $t=0$ 时, $x=0$ 处的温度为 $T_{1}, x=L$ 处的温度为 $T_{2}$, 且 $T_{1}>T_{2}$, 其间温度 $T$ 线性地分布。设柱体的热传导率 $k$, 比热 $c$ 及密度 $\\rho$ 均为常量, 各处的热膨胀均可略。",
+        "specific_questions": "试导出 $t$ 时刻 $x$ 处温度 $T(x, t)$ 的积分表达式。",
+        "solution": "在柱体中取从 $x$ 到 $(x+\\mathrm{d} x)$ 的一小段, 在 $t$ 到 $(t+\\mathrm{d} t)$ 时间内, 该小段从左侧吸收的热量为\n\n$$\n\\mathrm{d} Q_{1}=-k\\left(\\frac{\\partial T}{\\partial x}\\right)_{x} S \\mathrm{~d} t=-k T_{x}^{\\prime}(x, t) S \\mathrm{~d} t\n$$\n\n同时，该小段向右侧放出的热量为\n\n$$\n\\mathrm{d} Q_{2}=-k\\left(\\frac{\\partial T}{\\partial x}\\right)_{x+\\mathrm{d} x} S \\mathrm{~d} t=-k T_{x}^{\\prime}(x+\\mathrm{d} x, t) S \\mathrm{~d} t\n$$\n\n总的吸热量为\n\n$$\n\\begin{aligned}\n\\mathrm{d} Q & =\\mathrm{d} Q_{1}-\\mathrm{d} Q_{2}=-k\\left[T_{x}^{\\prime}(x, t)-T_{x}^{\\prime}(x+\\mathrm{d} x, t)\\right] S \\mathrm{~d} t \\\\\n& =k\\left[T_{x}^{\\prime}(x+\\mathrm{d} x, t)-T_{x}^{\\prime}(x, t)\\right] S \\mathrm{~d} t\n\\end{aligned}\n$$\n\n吸收的热量使小段升温为\n\n$$\n\\mathrm{d} Q=cp(S \\mathrm{~d} x) \\mathrm{d} T\n$$\n\n由以上，得\n\n$$\nc \\rho \\mathrm{d} T \\mathrm{~d} x=k\\left[T_{x}^{\\prime}(x+\\mathrm{d} x, t)-T_{x}^{\\prime}(x, t)\\right] \\mathrm{d} t\n$$\n\n即\n\n$$\n\\left(\\frac{\\mathrm{d} T}{\\mathrm{~d} t}\\right)_{x \\neq \\varnothing}=\\frac{k}{c \\rho} \\cdot \\frac{T_{x}^{\\prime}(x+\\mathrm{d} x, t)-T_{x}^{\\prime}(x, t)}{\\mathrm{d} x}=\\frac{k}{c \\rho} T_{xx}^{\\prime}\n$$\n\n这是热传导的偏微分方程，设初始分布\n\n$$\nT(x, 0)=T_{1}-\\frac{T_{1}-T_{2}}{L} x\n$$\n\n求得积分解\n\n$$\nT(x, t)=\\frac{1}{2 a \\sqrt{\\pi t}} \\int_{0}^{L} T\\left(x^{\\prime}, 0\\right) \\mathrm{e}^{-\\left(x^{\\prime}-x\\right)^{2} \\rho \\mathrm{~d} x^{2} t} \\mathrm{~d} x^{\\prime}\n$$",
+        "final_answer": "$$\\frac{1}{2 a \\sqrt{\\pi t}} \\int_{0}^{L} T\\left(x^{\\prime}, 0\\right) \\mathrm{e}^{-\\left(x^{\\prime}-x\\right)^{2} \\rho \\mathrm{~d} x^{2} t} \\mathrm{~d} x^{\\prime}$$"
+    },
+    {
+        "question_number": "28.1_fb4b3556ee",
+        "condition": "在温度为 $T$ 的恒温热源中有一导热容器，它被隔板分成体积均为 $V$ 的左、右两部分，隔板上有一小孔，面积为 $A$ ，开始时 $(t=0)$ ，左方装有摩尔质量为 $\\mu_{1}$ 的 $\\nu \\mathrm{mol}$ 理想气体，右方装有另一种摩尔质量为 $\\mu_{2}(\\mu_{2} \\neq \\mu_{1})$ 的 $\\nu \\mathrm{mol}$ 理想气体。由于孔很小，虽然板两侧不断有分子交换，但仍可假定在任一时刻系统都处于平衡态。",
+        "specific_questions": "试求隔板左、右两侧气体的密度 $\\rho_{L}, \\rho_{R}$ 各自随时间 $t$ 的变化关系。",
+        "solution": "开始时 $(t=0)$ ，第一种分子在左方的数密度和第二种分子在右方的数密度相同，均为$$ n_{0}=\\frac{v N_{A}}{V} $$考虑第一种分子，任意 $t$ 时刻，在左方和右方的第一种分子的数密度分别为 $n_{1 L}(t)$ 和 $n_{1 R}(t)$ ，则$$ n_{1 L}(t)+n_{1 R}(t)=n_{0} $$从 $t$ 时刻经过 $\\mathrm{d} t$ 时间后，左方第一种分子数密度的减少量为$$ -\\mathrm{d} n_{1 L}(t)=\\frac{1}{6} n_{1 L}(t) \\bar{v}_{1} A \\mathrm{~d} t-\\frac{1}{6} n_{1 R}(t) \\bar{v}_{1} A \\mathrm{~d} t $$其中$$ \\bar{v}_{1}=\\sqrt{\\frac{8 R T}{\\pi \\mu_{1}}} $$由上式消去 $n_{1 R}(t)$ 得$$ \\frac{\\mathrm{d} n_{1 L}(t)}{2 n_{1 L}(t)-n_{0}}=-\\frac{1}{6} \\bar{v}_{1} A \\mathrm{~d} t $$积分得$$ \\ln \\left[\\frac{2 n_{1 L}(t)-n_{0}}{n_{0}}\\right]=-\\frac{1}{3} \\bar{v}_{1} A t $$故$$ \\left\\{\\begin{array}{l} n_{1 L}(t)=\\frac{1}{2} n_{0}\\left(1+\\mathrm{e}^{-\\frac{1}{3} \\bar{v}_{1} A t}\\right) \\\\ n_{1 R}(t)=\\frac{1}{2} n_{0}\\left(1-\\mathrm{e}^{-\\frac{1}{3} \\bar{v}_{1} A t}\\right) \\end{array}\\right\\} $$对于第二种分子，得出$$ \\left\\{\\begin{array}{l} n_{2 L}(t)=\\frac{1}{2} n_{0}\\left(1-\\mathrm{e}^{-\\frac{1}{3} \\bar{v}_{2} A t}\\right) \\\\ n_{2 R}(t)=\\frac{1}{2} n_{0}\\left(1+\\mathrm{e}^{-\\frac{1}{3} \\bar{v}_{2} A t}\\right) \\end{array}\\right\\} $$其中$$ \\bar{v}_{2}=\\sqrt{\\frac{8 R T}{\\pi \\mu_{2}}} $$因此，$$ \\left\\{\\begin{array}{l} \\rho_{L}(t)=m_{1} n_{1 L}(t)+m_{2} n_{2 L}(t) \\\\ \\rho_{R}(t)=m_{1} n_{1 R}(t)+m_{2} n_{2 R}(t) \\end{array}\\right\\} $$其中$$ \\left\\{\\begin{array}{l} m_{1} n_{0}=\\frac{\\mu_{1} \\nu}{V} \\\\ m_{2} n_{0}=\\frac{\\mu_{2} \\nu}{V} \\end{array}\\right\\} $$最终$$ \\left\\{\\begin{array}{l} \\rho_{L}(t)=\\frac{\\nu}{2 V}\\left[\\mu_{1}+\\mu_{2}+\\mu_{1} \\exp\\left(-\\frac{1}{3} \\sqrt{\\frac{8 R T}{\\pi \\mu_{1}}} A t\\right)-\\mu_{2} \\exp\\left(-\\frac{1}{3} \\sqrt{\\frac{8 R T}{\\pi \\mu_{2}}} A t\\right)\\right] \\\\ \\rho_{R}(t)=\\frac{\\nu}{2 V}\\left[\\mu_{1}+\\mu_{2}-\\mu_{1} \\exp\\left(-\\frac{1}{3} \\sqrt{\\frac{8 R T}{\\pi \\mu_{1}}} A t\\right)+\\mu_{2} \\exp\\left(-\\frac{1}{3} \\sqrt{\\frac{8 R T}{\\pi \\mu_{2}}} A t\\right)\\right] \\end{array}\\right\\} $$",
+        "final_answer": "$$\\left\\{\\begin{array}{l} \\frac{\\nu}{2 V}(\\mu_{1}+\\mu_{2}+\\mu_{1} e^{-\\frac{1}{3} \\sqrt{\\frac{8 R T}{\\pi \\mu_{1}}} A t}-\\mu_{2} e^{-\\frac{1}{3} \\sqrt{\\frac{8 R T}{\\pi \\mu_{2}}} A t}) \\\\ \\frac{\\nu}{2 V}(\\mu_{1}+\\mu_{2}-\\mu_{1} e^{-\\frac{1}{3} \\sqrt{\\frac{8 R T}{\\pi \\mu_{1}}} A t}+\\mu_{2} e^{-\\frac{1}{3} \\sqrt{\\frac{8 R T}{\\pi \\mu_{2}}} A t}) \\end{array}\\right\\}$$"
+    },
+    {
+        "question_number": "28.2_78763cfaf9",
+        "condition": "在温度为 $T$ 的恒温热源中有一导热容器，它被隔板分成体积均为 $V$ 的左、右两部分，隔板上有一小孔，面积为 $A$ ，开始时 $(t=0)$ ，左方装有摩尔质量为 $\\mu_{1}$ 的 $\\nu \\mathrm{mol}$ 理想气体，右方装有另一种摩尔质量为 $\\mu_{2}(\\mu_{2} \\neq \\mu_{1})$ 的 $\\nu \\mathrm{mol}$ 理想气体。由于孔很小，虽然板两侧不断有分子交换，但仍可假定在任一时刻系统都处于平衡态。",
+        "specific_questions": "试计算最后达到 $\\rho_{L}=\\rho_{R}$ 时，气体系统的熵的增量。",
+        "solution": "经过足够长的时间后，即当 $t=\\infty$ 时，由两种气体各自均匀分布在体积为 $2 V$ 的全部容器内。理想气体的熵表达式为$$ S=\\nu C_{V} \\ln T+\\nu R \\ln V+C $$第一种气体从体积 $V$ 扩散到 $2 V$ (温度 $T$ 不变)，它的熵增量为$$ \\Delta S_{1}=\\nu R \\ln 2 $$同理，第二种气体从 $V$ 扩散到 $2 V$ (温度 $T$ 不变)，它的熵增量为$$ \\Delta S_{2}=\\nu R \\ln 2 $$因此，系统总的熵增量为$$ \\Delta S=\\Delta S_{1}+\\Delta S_{2}=2 \\nu R \\ln 2 $$",
+        "final_answer": "$$2 \\nu R \\ln 2$$"
+    },
+    {
+        "question_number": "29.1_a607b18d91",
+        "condition": "布朗运动的实验用于粗略测量阿伏伽德罗常数 $N_{A}$ 。作布朗运动的微粒系统可视为在浮力计及重力场中达到平衡态的巨分子系统，数密度遵循玻尔兹曼分布。设在某实验中，半径 $r=2.12 \times 10^{-7} \text{m}$，质量密度 $\\rho=1.194 \\times 10^{3} \\text{kg/m}^{3}$ 的球形布朗粒子，悬浮在密度 $\\rho_{0}=1.0 \\times 10^{3} \\text{kg/m}^{3}$、温度 $T=273 \\text{K}$ 的液体中。在高度相距为 $\\Delta h=3.0 \\times 10^{-5} \\text{m}$ 的两处，测得布朗粒子的数密度之比为 $n_{1}: n_{2}=2.08$。",
+        "specific_questions": "试计算 $N_{A}$ 。",
+        "solution": "布朗粒子的质量为\n\n$$\nm=\\frac{4}{3} \\pi r^{3} \\rho\n$$\n\n它受到重力 $mg$ (向下)和液体浮力 $mg \\frac{\\rho_{0}}{\\rho}$ (向上)的作用，合力向下，为\n\n$$\nF=mg-mg \\frac{\\rho_{0}}{\\rho}=mg\\left(1-\\frac{\\rho_{0}}{\\rho}\\right)\n$$\n\n布朗粒子在任意 $z$ 处的势能为\n\n$$\n\\varphi=mg\\left(1-\\frac{\\rho_{0}}{\\rho}\\right) z\n$$\n\n根据玻尔兹曼分布，布朗粒子的数密度 $n$ 随高度 $z$ 的变化规律为\n\n$$\nn=n_{0} \\mathrm{e}^{-mg\\left(1-\\frac{\\rho_{0}}{\\rho}\\right) z / kT}\n$$\n\n并且\n\n$$\n\\frac{n_{1}}{n_{2}}=\\mathrm{e}^{-mg\\left(1-\\frac{\\rho_{0}}{\\rho}\\right)\\Delta h/kT}\n$$\n\n由上式解出玻尔兹曼常量 $k$ 为\n\n$$\nk=\\frac{4 \\pi r^{3} g\\left(\\rho-\\rho_{0}\\right) \\Delta h}{3 T \\ln \\frac{n_{1}}{n_{2}}}\n$$\n\n因为 $k=\\frac{R}{N_{A}}$\n\n所以\n\n$$\nN_{A}=\\frac{3 R T \\ln \\frac{n_{1}}{n_{2}}}{4 \\pi r^{3} g\\left(\\rho-\\rho_{0}\\right) \\Delta h}\n$$\n\n结果为 $N_{A}=7.29 \\times 10^{23}\\mathrm{mol}^{-1}$ ，数量级正确，但数值相当不精确。",
+        "final_answer": "$$7.29 \\times 10^{23}$$"
+    },
+    {
+        "question_number": "30.2_62bb3b7713",
+        "condition": "在实验中，细小油珠的半径为 $R=5.0 \times 10^{-6} \text{ m}$，悬浮在氮气中并测量沿水平方向 $x$ 的布朗运动。氮气的粘滞系数为 $\u0017=1.73 \times 10^{-5} \text{ Pa s}$，实验温度为 $15^{}$C 。",
+        "specific_questions": "试计算玻尔兹曼常量 $k$ 的值。",
+        "solution": "根据实验测得的 $\\Delta x$ 数据，计算 $\\overline{x^{2}}$ 为\n\n$$\n\\overline{x^{2}} = \\frac{\\sum n_{i}(\\Delta x_{i})^{2}}{\\sum n_{i}}\n$$\n\n代入数据得到：\n\n$$\n\\overline{x^{2}} = 21.08 \times 10^{-12} \text{ m}^{2}\n$$\n\n使用 $\n\\overline{x^{2}} = \\frac{k T}{3 \\pi R \\eta} t$\n，计算玻尔兹曼常量 $k$ 为\n\n$$\nk = \\frac{3 \\pi R \\eta \\overline{x^{2}}}{T t}\n$$\n\n代入 $R=5.0 \times 10^{-6}, \\eta=1.73 \times 10^{-5}, T=288.15, t=5$ ，计算得到\n\n$$\nk = 1.19 \times 10^{-23}\n$$",
+        "final_answer": "$1.19 \\times 10^{-23}$"
+    },
+    {
+        "question_number": "1_81b7279db8",
+        "condition": "1 mol 范德瓦耳斯气体由温度 $T_{1}$, 体积 $V_{1}$ 自由膨胀到体积 $V_{2}$. 设气体的 $C_{V}, a, b$ 均为已知常量.",
+        "specific_questions": "试求该过程中气体熵的增量.",
+        "solution": "由于自由膨胀过程中内能不变, 我们设计一个内能不变的准静态可逆过程连接相同的初态和终态, 从而求得熵的增量. \n\n根据范德瓦耳斯气体状态方程\n$$p = \\frac{R T}{V-b} - \\frac{a}{V^{2}}$$\n可逆过程中, 内能微分为\n$$\\mathrm{d} U=C_{V} \\mathrm{~d} T+ \\left(\\frac{a}{V^{2}}\\right) \\mathrm{~d} V,$$\n当内能不变时, \n$$C_{V} \\mathrm{~d} T + \\frac{a}{V^{2}} \\mathrm{~d} V = 0. $$\n积分得可逆过程的过程方程:\n\n$$T = T_{1} + \\frac{a}{C_{V}}\\left(\\frac{1}{V} - \\frac{1}{V_{1}}\\right)$$\n对于终态 $(T_{2}, V_{2})$,\n$$T_{2} = T_{1} + \\frac{a}{C_{V}}\\left(\\frac{1}{V_{2}} - \\frac{1}{V_{1}}\\right).$$\n熵的增量为\n$$\\Delta S = \\int_{V_{1}}^{V_{2}} \\frac{R}{V-b} \\mathrm{~d} V + \\int_{T_{1}}^{T_{2}} C_{V} \\frac{\\mathrm{d} T}{T} = R \\ln \\frac{V_{2}-b}{V_{1}-b} + C_{V} \\ln \\frac{T_{2}}{T_{1}}.$$ \n代入$T_{2}$, 得\n$$\\Delta S = R \\ln \\frac{V_{2}-b}{V_{1}-b} + C_{V} \\ln \\left[1 + \\frac{a}{C_{V} T_{1}}\\left(\\frac{1}{V_{2}} - \\frac{1}{V_{1}}\\right)\\right].$$",
+        "final_answer": "R \\ln \\frac{V_{2}-b}{V_{1}-b} + C_{V} \\ln \\left[1 + \\frac{a}{C_{V} T_{1}}\\left(\\frac{1}{V_{2}} - \\frac{1}{V_{1}}\\right)\\right]"
+    },
+    {
+        "question_number": "2.1_bb32356b1c",
+        "condition": "1 \text{ mol } \text{氧气在节流过程中体积由高压一边的 } 4.0 \times 10^{-3} \text{ m}^{3} \text{ 增大到低压一边的 } 1.2 \times 10^{-2} \text{ m}^{3} \text{ 。已知氧气为范围瓦耳斯气体，范氏常量为 } a=0.138 \text{ N} \text{ m}^{3} / \text{mol}^{2}, b=3.2 \times 10^{-5} \text{ m}^{3} / \text{mol}, \text{摩尔定体热容量恒定，为 } C_{V}=20.8 \text{ J} /(\text{mol} \text{ K})\text{。}",
+        "specific_questions": "试计算节流过程前后氧气的温度变化。",
+        "solution": "节流过程是等焓过程，故有 $$ H_{2}=H_{1} $$ 或 $$ U_{2}+p_{2} V_{2}=U_{1}+p_{1} V_{1} $$ 即 $$ p_{2} V_{2}-p_{1} V_{1}=U_{1}-U_{2} $$ 式中的下标 1 和 2 分别表示膨胀前和膨胀后的物理量。范氏气体的状态方程为 $$ \\\\(p+\\\frac{a}{V^{2}}\\\\)(V-b)=R T $$ 即 $$ p=\\\frac{R T}{V-b}-\\\frac{a}{V^{2}} $$ 把式代入等焓关系式中，得 $$ R\\left(T_{2}-T_{1}\\right)-a\\left(\\\frac{1}{V_{2}}-\\\frac{1}{V_{1}}\\right)=U_{1}-U_{2} $$ 内能表示为 $$(T, V)$$ 的函数为 $$ U=U(T, V) $$ 其微分式为 $$ \\\\mathrm{d} U=\\left(\\\frac{\\partial U}{\\partial T}\\right)_{V} \\\\mathrm{d} T+\\left(\\\frac{\\partial U}{\\partial V}\\right)_{T} \\\\mathrm{d} V=C_{V} \\\\mathrm{d} T+\\left(\\\frac{\\partial U}{\\partial V}\\right)_{T} \\\\mathrm{d} V $$ 由热力学第二定律导出内能与状态方程之间的关系 $$ \\left(\\\frac{\\partial U}{\\partial V}\\right)_{T}=T\\left(\\\frac{\\partial p}{\\partial T}\\right)_{V}-p $$ 由范氏方程得 $$ \\left(\\\frac{\\partial p}{\\partial T}\\right)_{V}=\\\frac{R}{V-b} $$ 把结果代入，得 $$ \\left(\\\frac{\\partial U}{\\partial V}\\right)_{T}=\\\frac{R T}{V-b}-p=\\\frac{a}{V^{2}} $$ 再代入微分式，得 $$ \\\\mathrm{d} U=C_{V} \\\\mathrm{d} T+\\\frac{a}{V^{2}} \\\\mathrm{d} V $$ 积分得 $$ U=U_{0}+C_{V} T-\\\frac{a}{V} $$ 求出 $$ U_{1}-U_{2}=C_{V}\\left(T_{1}-T_{2}\\right)-\\left(\\\frac{a}{V_{1}}-\\\frac{a}{V_{2}}\\right) $$ 代入等焓关系式，得 $$ \\left(R+C_{V}\\right)\\left(T_{2}-T_{1}\\right)=2 a\\left(\\\frac{1}{V_{2}}-\\\frac{1}{V_{1}}\\right) $$",
+        "final_answer": "$$-1.6$$"
+    },
+    {
+        "question_number": "7.1_a2916cebbf",
+        "condition": "已知水在 1 atm 和 $4 \text{C}$ 时的表面张力系数 $\\alpha=7.24 \\times 10^{-2} \\mathrm{~N} / \\mathrm{m}$ ，等温压缩系数 $\\beta= -\\frac{1}{V}\\left(\\frac{\\partial V}{\\partial p}\\right)_{T}=4.75 \\times 10^{-5} \\mathrm{~atm}^{-1}$. 若在 1 atm 和 $4 \\mathrm{~V}$ 时, 水平液面下附近水的密度为 $\\rho_{0}$. ",
+        "specific_questions": "在 1 atm 和 $4 \\mathrm{~V}$ 时，半径 $r=1.0 \\times 10^{-6} \\mathrm{~cm}$ 的小水滴密度为多大?",
+        "solution": "由于等温压缩系数 $\\beta$ 的定义，我们有 $$ \\beta \\mathrm{d} p=-\\frac{\\mathrm{d} V}{V} $$ 积分得到 $$ \\ln \\frac{V_{0}}{V}=\\beta\\left(p-p_{0}\\right) $$ 对于同样质量的水，体积变化使密度变化为 $$ \\frac{\\rho}{\\rho_{0}}=\\frac{V_{0}}{V} $$ 代入前式得 $$ \\ln \\frac{\\rho}{\\rho_{0}}=\\beta\\left(p-p_{0}\\right) $$ 可解得 $$ \\rho=\\rho_{0} \\mathrm{e}^{\\beta\\left(p-p_{0}\\right)} $$ 小水滴与外部的压强差由表面张力引起 $$ p=p_{0}+\\frac{2 \\alpha}{r} $$ 合并得 $$ \\rho=\\rho_{0} \\mathrm{e}^{\\frac{2 \\alpha \\beta}{r}} $$ 计算可得 $$ \\frac{2 \\alpha \\beta}{r}=6.9 \\times 10^{-3} $$ 由于这一值远小于 1，所以近似得 $$ \\rho \\approx \\rho_{0}\\left(1+\\frac{2 \\alpha \\beta}{r}\\right) $$ 即 $$ \\rho \\approx 1.0069 \\rho_{0} $$",
+        "final_answer": "1.0069 \\rho_{0}"
+    },
+    {
+        "question_number": "11_dc297007a8",
+        "condition": "将一竖直无限大平板部分地浸入有润湿作用的液体之中，两者之间的接触角为 $\\theta$ ，液体密度为 $\\rho$ ，表面张力系数为 $\\alpha$ 。",
+        "specific_questions": "试求液体沿此板上升的高度。",
+        "solution": "设液体内侧靠近 $Q$ 点的压强为 $p_{Q}$ ，则 \n$$p_{Q}=p_{0}+\\alpha\\left(\\frac{1}{R_{1}}+\\frac{1}{R_{2}}\\right)$$ 式中 $R_{1}$ 和 $R_{2}$ 是液面在 $Q$ 点的两个主曲率半径， $p_{0}$ 是大气压强，亦即水平液面的内侧压强，故又有 \n$$p_{Q}=p_{0}-\\rho g y$$ \n取第一正交截图为 $xy$ 平面，它与柱形液面的交线为 $y(x)$ ，则在 $Q$ 点的第一曲率半径 $R_{1}$为 \n$$R_{1}=-\\frac{\\left(1+y'^{2}\\right)^{3/2}}{y''}$$ \n第二曲率半径为 \n$$R_{2}=\\infty$$ 联立得到 \n$$\\frac{\\mathrm{d}^{2}y}{\\mathrm{d}x^2}=\\frac{-\\rho g y}{\\alpha (1 + (\\frac{\\mathrm{d}y}{\\mathrm{d}x})^2)^{3/2}}$$ \n积分并使用边界条件 $y' = -\\cot \\theta$ 在 $y = h$ 得 \n$$h=\\sqrt{\\frac{2 \\alpha}{\\rho g} (1-\\sin \\theta)}$$",
+        "final_answer": "$$\\sqrt{\\frac{2 \\alpha}{\\rho g} (1-\\sin \\theta)}$$"
+    },
+    {
+        "question_number": "12.1_e4224d1d40",
+        "condition": "由同种原子组成的均匀一维晶体中，只有最相邻的原子之间有相互作用，作用势为 $V(x)=-\\frac{A}{x^{6}}+\\frac{B}{x^{13}}$, 其中 $x$ 是相邻原子的间距，$A$ 和 $B$ 是两个常量。",
+        "specific_questions": "试求平衡时原子间的平均距离。",
+        "solution": "设平衡时原子间的平均距离为 $x_{0}$，则\n$$\n\\left(\\frac{\\mathrm{d} V}{\\mathrm{~d} x}\\right)_{x=x_{0}}=0\n$$\n即\n$$\n6 A x_{0}^{7}=12 B x_{0}^{-13}\n$$\n故\n$$\nx_{0}=\\left(\\frac{2 B}{A}\\right)^{\\frac{1}{6}}\n$$",
+        "final_answer": "$$\\left(\\frac{2 B}{A}\\right)^{\\frac{1}{6}}$$"
+    },
+    {
+        "question_number": "12.2_b2e2e7485f",
+        "condition": "由同种原子组成的均匀一维晶体中，只有最相邻的原子之间有相互作用，作用势为 $V(x)=-\\frac{A}{x^{6}}+\\frac{B}{x^{13}}$, 其中 $x$ 是相邻原子的间距，$A$ 和 $B$ 是两个常量。",
+        "specific_questions": "当此晶体在平衡位置附近的相对形变为单位值时，试求其弹性系数（用 $A$ 和 $B$ 表示）。",
+        "solution": "相邻原子间的作用力为\n$$\nf(x)=-\\frac{\\mathrm{d} V}{\\mathrm{~d} x}=\\frac{6 A}{x^{7}}-\\frac{12 B}{x^{13}}\n$$\n考虑在 $x_{0}$ 附近形变 $\n\\Delta x$ \n$$\nf \\approx \\frac{6 A}{x_{0}^{7}}\\left(1-7 \\frac{\\Delta x}{x_{0}}\\right)-\\frac{12 B}{x_{0}^{13}}\\left(1-13 \\frac{\\Delta x}{x_{0}}\\right)\n$$\n代入平衡条件得 \n$$\nf=\\frac{36 A}{x_{0}^{7}} \\cdot \\frac{\\Delta x}{x_{0}}\n$$\n单位长度的弹性系数为\n$$\nk=\\frac{36 A}{x_{0}^{7}}\n$$\n代入 $x_{0}$ ，得\n$$\nk=\\frac{18 A^{2}}{B}\\left(\\frac{A}{2 B}\\right)^{\\frac{1}{6}}\n$$",
+        "final_answer": "$$\\frac{18 A^{2}}{B}\\left(\\frac{A}{2 B}\\right)^{\\frac{1}{6}}$$"
+    },
+    {
+        "question_number": "12.3_d63391e6c8",
+        "condition": "由同种原子组成的均匀一维晶体中，只有最相邻的原子之间有相互作用，作用势为 $V(x)=-\\frac{A}{x^{6}}+\\frac{B}{x^{13}}$, 其中 $x$ 是相邻原子的间距，$A$ 和 $B$ 是两个常量。",
+        "specific_questions": "将晶体慢慢拉伸，试问当形变为多大时，晶体会被拉断。",
+        "solution": "考虑相邻原子间的极大吸引力 $f_{m}$，当 $x=x_{m}$ 时，\n$$\n\\left(\\frac{\\mathrm{d} f}{\\mathrm{~d} x}\\right)_{x=x_{m}}=0\n$$\n得\n$$\n-42 A x_{m}^{-8} + 12 \\times 13 B x_{m}^{-14}=0\n$$\n故\n$$\nx_{m}=\\left(\\frac{26 B}{7 A}\\right)^{\\frac{1}{6}}\n$$\n相对形变为\n$$\n\\frac{x_{m}-x_{0}}{x_{0}}=\\frac{x_{m}}{x_{0}}-1=\\left(\\frac{13}{7}\\right)^{\\frac{1}{6}}-1=0.11\n$$",
+        "final_answer": "$$0.11$$"
+    },
+    {
+        "question_number": "13.1_cc69f020c1",
+        "condition": "NaCl 晶体在平衡态时 $\\mathrm{Na}^{+}$ 和最邻近的 $\\mathrm{Cl}^{-}$之间的距离为 $r_{0}=2.81 \\times 10^{-10} \\, \\mathrm{m}$ ，绝热压缩系数为 $k_{s}=-\\frac{1}{V}\\left(\\frac{\\mathrm{~d} V}{\\mathrm{~d} p}\\right)_{s}=3.3 \\times 10^{-11} \\, \\mathrm{m}^{2} / \\mathrm{N}$ ，马德隆常量为 $\\alpha=1.75$ 。",
+        "specific_questions": "试求平衡态时 1 mol NaCl 晶体的结合能 $E_{\\mathrm{P} 0}$ 。",
+        "solution": "由 $N \\gg 1$ 个分子组成的 NaCl 晶体的结合能为 $$ E_{\\mathrm{P}}=N\\left(\\frac{a_{m}}{r^{m}}-\\frac{\\alpha e^{2}}{4 \\pi \\varepsilon_{0} r}\\right). $$ 在平衡态 $r=r_{0}$ ，对 1 mol 晶体 $N=N_{A}$ 。在平衡态， $E_{\\mathrm{P}}=E_{\\mathrm{P} 0}$ 应为极小，需满足 $$ \\left(\\frac{\\mathrm{d} E_{\\mathrm{P}}}{\\mathrm{~d} r}\\right)_{r=r_{0}}=0. $$ 把结合能公式代入，得 $$ N\\left(-\\frac{m a_{m}}{r_{0}^{m+1}}+\\frac{\\alpha e^{2}}{4 \\pi \\varepsilon_{0} r_{0}^{2}}\\right)=0. $$ 故 $$ a_{m}=\\frac{\\alpha e^{2}}{4 \\pi \\varepsilon_{0} m} r_{0}^{m-1}. $$ 在平衡态， 1 mol NaCl 晶体的结合能为 $$ E_{\\mathrm{P} 0}=N_{A}\\left(\\frac{a_{m}}{r^{m}}-\\frac{\\alpha e^{2}}{4 \\pi \\varepsilon_{0} r_{0}}\\right)=\\frac{N_{A} \\alpha e^{2}}{4 \\pi \\varepsilon_{0} r_{0}}\\left(\\frac{1}{m}-1\\right). $$ 结合已知的绝热压缩系数 $k_{s}$，我们得到 $$ \\left(\\frac{1}{k_{s}}\\right)_{r=r_{0}}=\\frac{(m-1) \\alpha e^{2}}{72 \\pi \\varepsilon_{0} r_{0}^{4}}. $$ 把已知的各种数据代入上式,解得 $$ m=9.4. $$",
+        "final_answer": "-7.5 \\times 10^{5}"
+    },
+    {
+        "question_number": "14.1_d6522b9b7e",
+        "condition": "质量为 2.0 \\mathrm{~kg} ，温度为 $-13^{\\circ} \\mathrm{C}$ ，体积为 $0.19 \\mathrm{~m}^{3}$ 的氟利昂（其分子量为 121 ），在保持温度不变的条件下被压缩，体积减小为 $0.10 \\mathrm{~m}^{3}$ 。已知在 $-13^{\\circ} \\mathrm{C}$ 时，液态氟利昂的密度为 $\\rho=1.44 \\times 10^{3} \\mathrm{~kg} / \\mathrm{m}^{3}$ ，饱和蒸汽压为 $p_{\\text {鱼 }}=2.08 \\times 10^{5} \\mathrm{~Pa}$ ，又氟利昂的饱和蒸汽可近似看作理想气体。",
+        "specific_questions": "试问在此过程中有多少千克的氟利昂被液化。",
+        "solution": "设氟利昂经等温压缩后，液态部分的质量为 $M_{1}$ ，气态部分的质量为 $M_{2}$ ，体积为 $V_{2}$ ，压强为饱和蒸汽压 $p_{\\text {鱼 }}$ 。因氟利昂饱和蒸汽可视为理想气体，故有\n\n$$\np_{\\text {鱼 }} V_{2}=\\frac{M_{2}}{\\mu} R T\n$$\n\n式中 $\\mu=121 \\times 10^{-3} \\mathrm{~kg} / \\mathrm{mol}$ 是氟利昂的摩尔质量， $T=273-13=260 \\mathrm{~K}$ 。由\n\n$$\nV_{1}+V_{2}=V, \\quad M_{1}+M_{2}=M, \\quad M_{1}=\\rho V_{1}\n$$\n\n式中 $V=0.10 \\mathrm{~m}^{3}$ 为压缩后氟利昂的体积， $M=2.0 \\mathrm{~kg}$ 为氟利昂的质量。通过消去 $V_{1}, V_{2}, M_{2}$ ，得到压缩后液态氟利昂的质量为\n\n$$\nM_{1}=\\frac{M \\frac{R T}{\\mu}-p_{\\text {鱼 }} V}{\\frac{R T}{\\mu}-\\frac{p_{\\text {鱼 }}}{\\rho}}=0.84 \\mathrm{~kg}\n$$\n\n设压缩前氟利昂全部处于气态，其体积为 $V_{i}=0.19 \\mathrm{~m}^{3}$ ，压强为 $p_{i}$ ，有\n\n$$\np_{i} V_{i}=\\frac{M}{\\mu} R T\n$$\n\n故\n\n$$\np_{i}=\\frac{M}{\\mu} \\frac{R T}{V_{i}}=1.87 \\times 10^{5} \\mathrm{~Pa}\n$$\n\n因 $p_{i}<p_{\\text {鱼 }}$ ，压缩前氟利昂确实全部处于气态。因此，上面解出的 $M_{1}=0.84 \\mathrm{~kg}$ 液态氟利昂是等温压缩过程中被液化的。",
+        "final_answer": "0.84"
+    },
+    {
+        "question_number": "16_a4c2c8ddc5",
+        "condition": "在一密闭容器内有冰、水和水蒸汽各 1 g ，三态共存达到平衡，系统的温度为 $t=0.01$ ，压强为 $p=4.58 \text{mmHg}$ ，容器内别无其他物质。现在保持容器体积不变的条件下，对此系统缓慢加热，输入热量 $Q=0.255 \text{kJ}$ 。已知冰的升华热 $L_{\text{升 }}=2.83 \text{kJ} / \text{g}$ ，水的汽化热 $L_{\text{气 }}=2.49 \text{kJ} / \text{g}$ 。",
+        "specific_questions": "试估算此系统再次达到平衡后，冰、水和水蒸汽各自的质量。",
+        "solution": "冰的熔解热 $L_{\text{㭗 }}$ 可近似为 $L_{\text{㭗 }}=L_{\text{升 }}-L_{\text{气 }}=0.34 \text{kJ} / \text{g}$ 。初态有 1 g 冰，若全部熔解则需吸热 0.34 kJ 。因加热过程输入的热量仅为 $Q=0.255 \text{kJ}$ ，不足以使冰全部熔化。在加热过程中，系统的温度和压力保持不变，由理想气体状态方程得初态水蒸汽的密度为 $$\\rho_\\kappa=\\frac{ \\mu \\rho}{K T}$$ 式中 $\\mu=18 \\times 10^{-3} \text{kg} / \text{mol}, p=4.58 \text{mmHg}=610 \text{Pa}, T=273 \text{K}$, 代入, 得 $$\\rho_\\kappa=5 \\times 10^{-3} \text{kg} / \text{m}^{3}$$, 同时下水、冰的密度分别为 $$\\begin{aligned} & \\rho_{\\text{水}}=1 \\times 10^{3} \text{kg} / \text{m}^{3} \\\\ & \\rho_{\\text{冰}}=0.9 \\times 10^{3} \text{kg} / \text{m}^{3} \\end{aligned}$$ 。 $\\rho_{\\text{水}}$ 和 $\\rho_{\\text{水}} \\gg \\rho_\\kappa$ 。初态水蒸汽体积远大于水和冰的体积, 几乎占据了全部容器。在加热过程中，水蒸汽的温度和压强均不变，故密度不变。过程中水蒸汽体积也不变，所以水蒸汽质量保持不变，$m_{\\text{水}}=1 \\text{g}$ 。设终态冰、水的质量分别为 $m_{\\text{冰 }}$ 和 $m_{\\text{水 }}$ ，则 $$ m_{\\text{冰}} + m_{\\text{水}} = 2 \\text{g} $$ 及 $$ Q = (1 \\text{g} - m_{\\text{冰}}) L_{\\text{㭗 }} $$ 得出 $$ m_{\\text{冰}} = 0.25 \\text{g}, \\quad m_{\\text{水}} = 1.75 \\text{g} $$",
+        "final_answer": "m_{\\text{冰}}=0.25 , m_{\\text{水}}=1.75 , m_{\\text{水}}=1"
+    },
+    {
+        "question_number": "17.1_be07cc0b6e",
+        "condition": "地幔中硅酸盐的熔解热为 $L_{m}$，其液态密度与固态密度之比为 $\\alpha$。",
+        "specific_questions": "试求地幔中硅酸盐岩石的熔点 $T_{m}$ 随 $r$ 的变化率，$r$ 是岩石与地心的距离。",
+        "solution": "在固态硅酸盐地幔中，以地心为中心，任取半径从 $r$ 到 $(r+\\mathrm{d} r)$ 的一薄层，可以分析出克拉珀龙方程：$$\\frac{\\mathrm{d} T_{m}}{T_{m} \\mathrm{~d} p}=\\frac{v_{l}-v_{s}}{L_{m}}$$ 代入体积关系 $v_{l}$ 和 $v_{s}$，然后得到熔点变化率：$$\\frac{\\mathrm{d} T_{m}}{\\mathrm{~d} r}=\\frac{\\alpha-1}{\\alpha} \\cdot \\frac{T_{m}}{L_{m}} g \\frac{r}{R}$$。",
+        "final_answer": "$\\frac{\\alpha-1}{\\alpha} \\cdot \\frac{T_{m}}{L_{m}} g \\frac{r}{R}$"
+    },
+    {
+        "question_number": "17.2_7a158be452",
+        "condition": "地幔较上部位某处的 $T_{m}=1300 \\, \\mathrm{C}$, $\\alpha=0.9$, $L_{m}=10^{5} \\, \\mathrm{cal} / \\mathrm{kg}$。",
+        "specific_questions": "试估算从该处往地心深入 $1000 \\, \\mathrm{m}$ 后，$T_{m}$ 变化了多少？",
+        "solution": "利用变化量公式：$$\\Delta T_{m} \\approx \\frac{\\alpha-1}{\\alpha} \\cdot \\frac{T_{m}}{L_{m}} g \\Delta r$$，并代入已知数据：$$T_{m}=1300, \\alpha=0.9, L_{m}=10^{5}$$，计算可得：$$\\Delta T_{m}=4 \\, \\mathrm{C}$$。",
+        "final_answer": "4"
+    },
+    {
+        "question_number": "1.1_8ecfd6e9ce",
+        "condition": "真空中有两个点电荷 $q_{1}$ 和 $q_{2}$ ，它们的质量分别为 $m_{1}$ 和 $m_{2}$ ，位置矢量分别为 $r_{1}$ 和 $r_{2}$ ，只考虑其间的库仑相互作用。",
+        "specific_questions": "引入相对位矢 $r=r_{2}-r_{1}$ ，试建立 $r(t)$ 的微分方程。",
+        "solution": "$q_{1}$ 和 $q_{2}$ 的运动方程为 $$ m_{1} \frac{\text{d}^2 r_{1}}{\text{d} t^2} = -\frac{q_{1} q_{2}}{4 \text{π} \text{ε}_{0} r^3} r $$ $$ m_{2} \frac{\text{d}^2 r_{2}}{\text{d} t^2} = \frac{q_{1} q_{2}}{4 \text{π} \text{ε}_{0} r^3} r $$ 相减得 $$ \frac{\text{d}^2 r}{\text{d} t^2} = \frac{q_{1} q_{2}}{4 \text{π} \text{ε}_{0}} \bigg(\frac{1}{m_{2}} + \frac{1}{m_{1}}\bigg) \frac{r}{r^3} $$",
+        "final_answer": ""
+    },
+    {
+        "question_number": "1.2_45af5d061f",
+        "condition": "真空中有两个点电荷 $q_{1}$ 和 $q_{2}$ ，它们的质量分别为 $m_{1}$ 和 $m_{2}$ ，位置矢量分别为 $r_{1}$ 和 $r_{2}$ ，只考虑其间的库仑相互作用。",
+        "specific_questions": "设 $t=0$ 时刻，两点电荷均静止，相互间距为 $r_{0}$ 。若两点电荷电量异号，试问它们何时相碰。",
+        "solution": "两点电荷在初始时刻 $t=0$ 静止，相对矢量的微分方程为 $$ m \frac{\text{d}^2 r}{\text{d} t^2} = \frac{q_{1} q_{2}}{4 \text{π} \text{ε}_{0} r^2} $$ 通过积分边界条件  $t=0$ 的初始条件为 $r = r_{0}$ 求解得 $$ \text{d} r = \frac{1}{\text{r}} \frac{\text{d} t}{\text{m}} $$ 利用初始条件$$\text{t} = 0,r_{0},\text{q}_{1}\text{q}_{2}<0$$，得 $$t(0)=\text{π} r_{0} \bigg(\frac{\text{m}_{2} \text{m}_{1} \text{π}}{2\text{q}_1 \text{q}_2 \text{m}_{1}}\bigg)^{\text{1 / 2}}$$",
+        "final_answer": "$$\text{π} r_{0} \bigg(\frac{\text{π} \text{ε}_{0} \text{m} r_{0}}{2 \text{q}_{1} \text{q}_{2}}\bigg)^{\text{1 / 2}}$$"
+    },
+    {
+        "question_number": "5_5127a69356",
+        "condition": "在 $xy$ 平面上有一以坐标原点为圆心，以 $R$ 为半径的带电圆环。电荷线密度的分布为：$y<0, \\lambda=\\lambda_{0}; y>0, \\lambda=-\\lambda_{0}$。",
+        "specific_questions": "试求 $\\varepsilon$ 轴（通过圆环的圆心，与圆环所在平面垂直的轴）上的场强分布。",
+        "solution": "关键在于对称性分析。在 $\\varepsilon$ 轴上任取一点，则在 $y<0$ 处的 $\\lambda_{0}$ 半圆环在 $\\varepsilon$点的场强矢量应位于 $y \\varepsilon$ 平面，这因为 $\\lambda_{0}$ 半圆环相对 $x$ 轴而言是对称的，且 $\\lambda_{0}>0$。同样，在 $y>0$ 处的 $-\\lambda_{0}$ 半圆环在 $\\varepsilon$点的场强矢量也应位于 $y \\varepsilon$ 平面并指向斜下方。由于两个半圆环相对 $x$ 轴对称，带电均匀且相同，只是一正一负，因此两个半圆环在 $\\varepsilon$点的场强矢量大小相同并抵消。 $\\varepsilon$ 轴上的电场强度 $\\boldsymbol{E}=E_{y} f$，有 $y$ 分量，$E_{y}$ 是 $+\\lambda_{0}$ 半圆环贡献的两倍。 在 $+\\lambda_{0}$ 半圆环上任取线元 $\\mathrm{d} l = R \\mathrm{d} \\theta$，它在 $\\varepsilon$点的电场强度 $\\mathrm{d}\\boldsymbol{E}$ 的方向沿 $\\mathrm{d} l$与$\\varepsilon$的连线指向斜上方，大小为 $$ \\mathrm{d} E = \\frac{\\lambda_{0} R \\mathrm{d} \\theta}{4 \\pi \\varepsilon_{0} r^{2}} $$ 式中 $$ r = \\sqrt{R^{2}+z^{2}} $$ $\n \\mathrm{d}\\boldsymbol{E}$ 在 $xy$ 平面上的投影为 $\\mathrm{d}\\boldsymbol{E}_{r}$, 其大小为 $$ \\mathrm{d} E_{r} = \\mathrm{d} E \\sin \\alpha = \\frac{R}{r} \\mathrm{~d} E $$ $\\mathrm{d}\\mathbf{E}_{r}$ 在 $y$轴的投影为 $$ \\mathrm{d} E_{y} = \\mathrm{d} E_{r} \\sin \\theta = \\frac{\\lambda_{0} R^{2}}{4 \\pi \\varepsilon_{0} r^{3}} \\sin \\theta \\mathrm{~d} \\theta $$ $+\\lambda_{0}$ 半圆环对 $E_{y}$ 的总贡献为 $$ E_{y,+} = \\int \\mathrm{d} E_{y} = \\frac{\\lambda_{0} R^{2}}{4 \\pi \\varepsilon_{0} r^{3}} \\int_{0}^{\\pi} \\sin \\theta \\mathrm{d} \\theta = \\frac{\\lambda_{0} R^{2}}{2 \\pi \\varepsilon_{0} r^{3}} $$ 因此, 整个带电圆环在 $z$点的场强为 $$ \\begin{aligned} \\boldsymbol{E} & = \\left(0, E_{y}, 0\\right)=\\left(0,2 E_{y,+}, 0\\right) \\\\ & = \\left(0, \\frac{\\lambda_{0} R^{2}}{\\pi \\varepsilon_{0} r^{3}}, 0\\right) \\end{aligned} $$",
+        "final_answer": "$$\\left(0, \\frac{\\lambda_{0} R^{2}}{\\pi \\varepsilon_{0} (R^{2}+z^{2})^{3/2}}, 0\\right)$$"
+    },
+    {
+        "question_number": "7_883bbd116a",
+        "condition": "半径为 $R$ 的半圆环均匀带电，电荷线密度为 $\\lambda$。",
+        "specific_questions": "试求圆心处的电场强度。",
+        "solution": "以圆心 $O$ 为原点建立 $x$ 轴和 $y$ 轴。在半圆上任取弧元 $\\mathrm{d} l$ ，它在 $O$ 点的电场强度 $\\mathrm{d} \\boldsymbol{E}$ 的 $y$ 分量互相抵消， $x$ 分量合成 $O$ 点的电场强度 $\\boldsymbol{E}_{0}$ 。\n$$\\mathrm{d} E_{x} = \\frac{\\lambda \\mathrm{d} l}{4 \\pi \\varepsilon_{0} R^{2}} \\cos \\alpha$$\n通过对称性分析，电场强度的 $x$ 分量\n$$E_{o} = \\int \\mathrm{d} E_{x} = \\frac{\\lambda}{4 \\pi \\varepsilon_{0} R^{2}} \\int \\mathrm{d} y = \\frac{\\lambda}{4 \\pi \\varepsilon_{0} R^{2}} 2 R$$",
+        "final_answer": "$\\frac{\\lambda}{2 \\pi \\varepsilon_{0} R}$"
+    },
+    {
+        "question_number": "8.1_fcae108127",
+        "condition": "在空间 $A$ 点有电量为 $5 Q$ 的固定点电荷，在 $B$ 点有电量为 $12 Q$ 的固定点电荷。 $A$ 点和 $B$ 点相距 $13 a$ ，空间另 $C$ 点与 $A$ 点和 $B$ 点分别相距 $5 a$ 和 $12 a$ 。",
+        "specific_questions": "以 $C$ 点为球心，以 $r=a$ 为半径作一球，试求在该球区域内，静电场电场强度 $\\boldsymbol{E}$ 的平均值 $|\\overline{\\boldsymbol{E}}|$。",
+        "solution": "以 $C$ 为球心， $r=a$ 为半径作球时， $A$ 点和 $B$ 点均在球外。于是电场平均值为点电荷 $A$ 和点电荷 $B$ 的场强之矢量和。由于 $A B C$ 为直角三角形，所以\n$$\n|\\bar{E}| =\\sqrt{E_{A C}^{2}+E_{B C}^{2}}=\\sqrt{\\left(\\frac{5 Q}{4 \\pi \\varepsilon_{0} (5 a)^{2}}\\right)^{2}+\\left(\\frac{12 Q}{4 \\pi \\varepsilon_{0} (12 a)^{2}}\\right)^{2}} =\\frac{1}{4 \\pi \\varepsilon_{0}} \\frac{13 Q}{60 a^{2}}\n$$",
+        "final_answer": "$$\\frac{13 Q}{60 a^{2}}$$"
+    },
+    {
+        "question_number": "8.2_6c3c540239",
+        "condition": "在空间 $A$ 点有电量为 $5 Q$ 的固定点电荷，在 $B$ 点有电量为 $12 Q$ 的固定点电荷。 $A$ 点和 $B$ 点相距 $13 a$ ，空间另 $C$ 点与 $A$ 点和 $B$ 点分别相距 $5 a$ 和 $12 a$ 。",
+        "specific_questions": "以 $C$ 点为球心，以 $r=10 a$ 为半径作一球，试求在该球区域内，静电场电场强度 $|\\overline{\\boldsymbol{E}}|$ 的平均值。",
+        "solution": "以 $C$ 为球心， $r=10 a$ 为半径作球时， $A$ 点在球内， $B$ 点在球外。电场平均值为：\n$$\n\\bar{E}=E_{A C} \\frac{(5 a)^{3}}{(10 a)^{3}}+E_{B C}\n$$\n即\n$$\n|\\bar{E}| =\\sqrt{\\left[\\frac{(5 a)^{3}}{(10 a)^{3}} E_{A C}\\right]^{2}+E_{B C}^{2}} =\\frac{1}{4 \\pi \\varepsilon_{0}} \\sqrt{\\left(\\frac{1}{8} \\cdot \\frac{Q}{5 a^{2}}\\right)^{2}+\\left(\\frac{Q}{12 a^{2}}\\right)^{2}} =\\frac{1}{4 \\pi \\varepsilon_{0}} \\frac{\\sqrt{109}}{120 a^{2}} Q\n$$",
+        "final_answer": "$$\\frac{\\sqrt{109}}{120 a^{2}} Q$$"
+    },
+    {
+        "question_number": "12.1_0b262fab23",
+        "condition": "$$-d \\\\leqslant x \\\\leqslant d$$ 的空间区域内，电荷体密度 $\\rho>0$ 为常量、其他区域均为真空。质量为 $m$ 的带电质点 $q(q<0)$ 在 $x=2d$ 处自静止开始仅受电力作用。",
+        "specific_questions": "经多长时间能到达 $x=0$ 位置。",
+        "solution": "带电质点在 $x>d$ 区域, 其电场 $E_{1}$ 大小为 $$E_{1}=\\frac{\\rho d}{\\varepsilon_{0}}$$。质点受力、加速度为 $$F_{1}=-\\frac{q \\rho d}{\\varepsilon_{0}}, \\quad a_{1}=-\\frac{q \\rho d}{\\varepsilon_{0} m}$$。匀加速直线运动时间 $$t_{1}=\\sqrt{\\frac{2 \\varepsilon_{0} m}{-q \\rho}}$$。进入 $0 \\\\leqslant x \\\\leqslant d$ 区域，发生线性回复力 $$F_{2}=q E_{2}=\\frac{q \\rho}{\\varepsilon_{0}} x=-k x, \\quad k=-\\frac{q \\rho}{\\varepsilon_{0}}>0$$ 简谐振动时间 $$t_{2}=\\left(\\arc \\sin \\frac{\\sqrt{3}}{3}\\right) \\sqrt{\\frac{\\varepsilon_{0} m}{-q \\rho}}$$。总时间 $$t=t_{1}+t_{2} = \\left(\\sqrt{2}+\\arc \\sin \\frac{\\sqrt{3}}{3}\\right) \\sqrt{\\frac{\\varepsilon_{0} m}{-q \\rho}}$$",
+        "final_answer": "$$2.03 \\sqrt{\\frac{\\varepsilon_{0} m}{-q \\rho}}$$"
+    },
+    {
+        "question_number": "13.1_7d1da57b66",
+        "condition": "在半径为 $R$ 的细圆环上分布着不能移动的正电荷, 总电量为 $Q$. 在环中指定直径 $A O B$ 线段内可作匀速直线运动.",
+        "specific_questions": "试确定圆环上电荷线密度 $\\lambda$ 的分布.",
+        "solution": "为使点电荷 $Q_{1}$ 能匀速直线运动, 在 $A O B$ 上各点的电场强度需为零. 若电量 $Q$ 均匀分布在半径为 $R$ 的球面上, 球内的电场强度处处为零. 通过联想, 设在圆环上取对应的线元 $P_{1}$ 和 $P_{2}$ 两线元, 使其电量相同于球面相应环状小带的电量. 用该电荷分布的圆环使 $A O B$ 上电场强度为零.",
+        "final_answer": "$\\lambda(\\varphi)=\\frac{1}{4 R} Q \\sin \\varphi$"
+    },
+    {
+        "question_number": "13.2_f1db33b628",
+        "condition": "取 $x$ 轴沿直径 $A O B$, 原点 $O$ 在环中心. 点电荷 $Q_{1}$ 放在与 $O$ 点相距 $r_{1}$ 的 $x$ 左半轴上某点. 设 $Q_{1}$ 的绝对值为 $Q$ 的 $\\nu$ 倍. 环的质量分布均匀.",
+        "specific_questions": "能否在 $x$ 右半轴上再放一个非零电量的点电荷 $Q_{2}$, 使得这两个点电荷及圆环均可保持不动. 试求 $Q_{2}$ 及其位置.",
+        "solution": "由电场强度计算, 圆环 $Q$ 相当于集中在 $O$ 点, 等效为三个共线的点电荷作用. 设定满足 $F_{1}=F_{2}=F_{3}$, 解决方程得到$Q_{2}$ 和 $Q_{2}$ 的位置. 求出 $r_{2}$ 与 $Q_{2}$ 在 $x$ 右半轴的位置条件.",
+        "final_answer": "$Q_{2}=\\frac{\\nu Q}{(\\sqrt{\\nu}-1)^{2}}$"
+    },
+    {
+        "question_number": "13.3_8858f2eb81",
+        "condition": "把上述两个点电荷 $Q_{1}$ 和 $Q_{2}$ 固定在第二问中确定的位置上, 改变它们的电荷符号但保持电量大小不变. 环 $Q$ 沿 $x$ 轴正方向平移.",
+        "specific_questions": "试定量讨论环的运动, 设环的质量为 $m$.",
+        "solution": "环平移时受到的作用力可近似为线性回复力. 计算得环将围绕平衡位置作简谐振动. 计算位移情况下的线性恢复力, 并得出振动的圆频率和周期.",
+        "final_answer": "$\\omega=\\sqrt{\\frac{\\nu \\sqrt{\\nu} Q^{2}}{2 \\pi \\varepsilon_{0} r_{1}^{3} m}}$"
+    },
+    {
+        "question_number": "18_3c8d2e46d5",
+        "condition": "地面上有一固定的点电荷 A ，在 A 的正上方有一带电小球 B，B在重力和 A 的库仑斥力的作用下，在 A 上方 $\\frac{H}{2}$ 到 $H$ 之间作往返的自由振动。",
+        "specific_questions": "试求 B 运动的最大速率 $v_{\\text {max }}$ 。",
+        "solution": "假设 B 受到 A 的库仑斥力，设 B 带电 $q$ ， A 带电 $Q$ ，则 $q$ 和 $Q$ 应同号。设 B 的质量为 $m$ 。B 在 $H$ 和 $\\frac{H}{2}$ 处的动能为零，因而其总势能相等，表述为 $$ m g H + \\frac{Q q}{4 \\pi \\varepsilon_{0} H} = m g \\frac{H}{2} + \\frac{Q q}{4 \\pi \\varepsilon_{0}(\\frac{H}{2})} $$ 即 $$ \\frac{Q q}{4 \\pi \\varepsilon_{0}} = \\frac{1}{2} m g H^{2} $$ 在高度 $h$ 处，B 受力为零，因此 $$ m g = \\frac{Q q}{4 \\pi \\varepsilon_{0} h^{2}} $$ 从以上两式，得到 $$ h = \\frac{H}{\\sqrt{2}} $$ 在 $h$ 处，B 的速率最大，即为 $v_{\\text {max}}$ ，运用能量守恒得到 $$ m g h + \\frac{Q q}{4 \\pi \\varepsilon_{0} h} + \\frac{1}{2} m v_{\\max}^{2} = m g H + \\frac{Q q}{4 \\pi \\varepsilon_{0} H} $$ 解得 $$ v_{\\max} = \\sqrt{(3 - 2\\sqrt{2}) g H} $$",
+        "final_answer": "$$\\sqrt{(3 - 2\\sqrt{2}) g H}$$"
+    },
+    {
+        "question_number": "21.2_a862da64bf",
+        "condition": "在平面上有一段长为 $l$ 的均匀带电直线 $AB$ ，在该平面取直角坐标 $Oxy$ ，原点 $O$ 为 $AB$ 中点, $AB$ 沿 $x$ 轴, $y$ 轴与 $x$ 轴垂直。",
+        "specific_questions": "试求该平面上的电场线方程。",
+        "solution": "在以 $A$ 和 $B$ 为两焦点的双曲线上任取一点 $P$ ，过 $P$ 点作该双曲线的切线 $SPT$ 和法线 $MPN$ （ $SPT$ 与 $MPN$ 垂直）。由双曲线的光学性质可知，从 $A$ 点到 $P$ 点的入射光线，经镜面 $MPN$ 反射后，必定经过 $B$ 点，即入射角 $\u0001AP S$ 等于反射角 $\u0001BP S$ ，换言之， $SPT$ 即为 $\u0001APB$ 的角平分线。若 $AB$ 均匀带电，由第 1 问，任一点 $P$ 的电场强度方向应沿 $\u0001APB$ 的角平分线，即应沿双曲线在 $P$ 点的切线 $SPT$ 的方向。因此，在该平面上的电场线，就是以 $A$ 和 $B$ 为两焦点的双曲线族。",
+        "final_answer": "$$\frac{x^{2}}{a^{2}}-\frac{y^{2}}{\frac{l^{2}}{4}-a^{2}}=1$$"
+    },
+    {
+        "question_number": "21.3_127165b6bc",
+        "condition": "在平面上有一段长为 $l$ 的均匀带电直线 $AB$ ，在该平面取直角坐标 $Oxy$ ，原点 $O$ 为 $AB$ 中点, $AB$ 沿 $x$ 轴, $y$ 轴与 $x$ 轴垂直。",
+        "specific_questions": "试求该平面上的等势线方程。",
+        "solution": "以 $A$ 和 $B$ 为两焦点作椭圆, 由椭圆的光学性质可知, 从 $A$ 点到椭圆上任一点的入射光线经椭圆反射后必定经过 $B$ 点. 过 $P$ 点作椭圆的切线 $MPN$ 和法线 $SPT$, 则入射角 $\u0001APS$ 应等于反射角 $\u0001BPS$. 若 $AB$ 均匀带电, 任一点 $P$ 的电场强度方向应沿 $\u0001APB$ 的角平分线. 即应沿椭圆在 $P$ 点的法线 $SPT$ 的方向. 因此, 通过 $P$ 点的等势线的方向应为与 $SPT$ 垂直的切线 $MPN$ 的方向. 换言之, 在该平面上的等势线, 就是以 $A$ 和 $B$ 为两焦点的椭圆族。",
+        "final_answer": "$$\frac{x^{2}}{a^{2}}+\frac{y^{2}}{a^{2}-\frac{l^{2}}{4}}=1$$"
+    },
+    {
+        "question_number": "23_05a1e41fab",
+        "condition": "线电荷密度分别为 $\\lambda$ 和 $-\\lambda(\\lambda=$ 常量) 的两平行无限长带电直线相距 $2 a$。",
+        "specific_questions": "试求等势面和电场线的空间分布。",
+        "solution": "根据两平行无限长均匀带电直线的对称性，可知等势面是一系列柱面，其母线与带电直线平行，空间任一点电场强度的方向必在与带电直线垂直的平面上。因此，只需讨论与带电直线垂直的 $x y$ 平面上的等势线与电场线分布即可。 取 $x y$ 坐标系，使两带电直线分别位于 $x= \\pm a, y=0$ ，且与 $z$ 轴平行，即 $x y$ 平面与两带电直线垂直。取原点 $x=0, y=0$ 为电势零点，则 $x y$ 平面上任一点 $(x, y)$ 的电势为\n$$\nU=\\frac{\\lambda}{2 \\pi \\varepsilon_{0}} \\ln \\frac{a}{\\left[(x-a)^{2}+y^{2}\\right]^{\\frac{1}{2}}}-\\frac{-\\lambda}{2 \\pi \\varepsilon_{0}} \\ln \\frac{a}{\\left[(x+a)^{2}+y^{2}\\right]^{\\frac{1}{2}}}=\\frac{\\lambda}{4 \\pi \\varepsilon_{0}} \\ln \\frac{(x+a)^{2}-y^{2}}{(x-a)^{2}-y^{2}}\n$$ 等势线满足\n$$\nU=\\text { 常量 }\n$$ 令\n$$\na=\\mathrm{e}^{-\\frac{4 \\pi \\varepsilon_{0} U}{\\lambda}}>0\n$$ 且 $a$ 为常量，则等势线的轨迹方程为\n$$\n(x+a)^{2}+y^{2}=a\\left[(x-a)^{2}+y^{2}\\right]\n$$即\n$$\nx^{2}-2 \\frac{a+1}{a-1} a x+y^{2}=-a^{2}\n$$或\n$$\n\\left(x-\\frac{a+1}{a-1} a\\right)^{2}+y^{2}=\\left(\\frac{2 \\sqrt{a}}{a-1} a\\right)^{2}\n$$ 因此，在 $x y$ 平面上，等势线是一系列以 $\\left(\\frac{a+1}{a-1} a, 0\\right)$ 为圆心，以 $\\left(\\frac{2 \\sqrt{a}}{a-1} a\\right)$ 为半径的圆。在全空间，等势面是一系列圆柱面。 在任一点 $(x, y)$ ，等势线的切线斜率为 $\\frac{\\mathrm{d} y}{\\mathrm{~d} x}$ ， 等势线的法线斜率为 $-\\frac{\\mathrm{d} x}{\\mathrm{~d} y}$ 。因电场线与等势线垂直，故在 $(x, y)$ 点，电场线的切线斜率等于该点等势线的法线斜率，即\n$$\n\\left(\\frac{\\mathrm{d} y}{\\mathrm{~d} x}\\right)_{\\text {电场线 }}=\\left(-\\frac{\\mathrm{d} x}{\\mathrm{~d} y}\\right)_{\\text {等势线 }}\n$$ 由\n$$\n\\left(\\frac{\\mathrm{d} x}{\\mathrm{~d} y}\\right)_{\\text {等势线 }}=\\frac{-y}{x-\\frac{a+1}{a-1} a}\n$$ 可得\n$$\n\\left(\\frac{\\mathrm{d} x}{\\mathrm{~d} y}\\right)_{\\text {等势线 }}=\\frac{-2 x y}{x^{2}-y^{2}-a^{2}}\n$$ 故电场线的切线斜率为\n$$\n\\left(\\frac{\\mathrm{d} y}{\\mathrm{~d} x}\\right)_{\\text {电场线 }}=\\frac{2 x y}{x^{2}-y^{2}-a^{2}}\n$$ 电场线方程为\n$$\ny^{2}-2 \\frac{a^{\\prime}+1}{a^{\\prime}-1} a y+x^{2}=a^{2}\n$$ 由（6）式可知，在 $x y$ 平面内，电场线是以 $\\left(0, \\frac{a^{\\prime}+1}{a^{\\prime}-1} a\\right)$ 为圆心，以\n$$\n\\frac{\\sqrt{2\\left(a^{\\prime 2}+1\\right)}}{a^{\\prime}-1} a$$ 为半径的一系列圆，这些圆都通过 $(a, O)$ 点和 $(-a, O)$ 点。",
+        "final_answer": ""
+    },
+    {
+        "question_number": "24.1_28b90c9cdd",
+        "condition": "在真空中，已知电场的能量密度为 $$w_{\\mathrm{e}}=\\frac{1}{2} \\varepsilon_{0} E^{2}$$。均匀带电球面，电量为 $Q$，半径为 $R$。",
+        "specific_questions": "求球面上的电场强度值。",
+        "solution": "设球面上的电场强度为 $E_{R}$。通过将带电球面从半径 $R$ 缓慢收缩至 $(R-\\mathrm{d} R)$，电场力所做的功为 $$ \\mathrm{d} w=Q E_{R} \\mathrm{d} R $$ 收缩区域的电场能为 $$ \\mathrm{d} w=\\frac{1}{2} \\varepsilon_{0} E^{2} 4 \\pi R^{2} \\mathrm{d} R $$ 高斯定理可得收缩后的电场强度 $$ E=\\frac{Q}{4 \\pi \\varepsilon_{0} R^{2}} $$ 因此球面的电场强度为 $$ E_{R}=\\frac{Q}{8 \\pi \\varepsilon_{0} R^{2}} $$",
+        "final_answer": "$$\\frac{Q}{8 \\pi \\varepsilon_{0} R^{2}}$$"
+    },
+    {
+        "question_number": "24.2_ffa1063df2",
+        "condition": "在真空中，已知电场的能量密度为 $$w_{\\mathrm{e}}=\\frac{1}{2} \\varepsilon_{0} E^{2}$$。均匀带电球面，电量为 $Q$，半径为 $R$。",
+        "specific_questions": "求带电球面上的表面张力系数 $\\sigma$。",
+        "solution": "在带电球面上取半径为小球帽的电场力为 $$ \\mathrm{d} F =E_{R} \\sigma_{\\mathrm{e}} \\pi R^{2}(\\mathrm{~d} \\varphi)^{2} $$ 通过表面张力的径向分量平衡，表面张力系数 $$ \\sigma =\\frac{\\mathrm{d} T}{2 \\pi r} =\\frac{1}{2} \\cdot \\frac{Q}{8 \\pi \\varepsilon_{0} R^{2}} \\cdot \\frac{Q}{4 \\pi R^{2}} R =\\frac{Q^{2}}{64 \\pi^{2} \\varepsilon_{0} R^{3}} $$",
+        "final_answer": "$$\\frac{Q^{2}}{64 \\pi^{2} \\varepsilon_{0} R^{3}}$$"
+    },
+    {
+        "question_number": "26.1_8df6769c23",
+        "condition": "质子加速器使每个质子得到的动能为 $E$ 。很细的质子束从加速器射向一个远离加速器的半径为 $r$ 的金属球，并留在球上。球的中心并不处在加速器发射出的质子运动方向的直线上，而与该直线的垂直距离为 $d$ ，且 $d<r$ 。",
+        "specific_questions": "试问加速器工作足够长时间后，球能充电到多高的电势？",
+        "solution": "设质子从加速器射出的初速为 $v_{0}$, 远离带电金属球, 静电势能为零，因此质子的初能量为动能 $E=\\frac{1}{2} m v_{0}^{2}$ 。当质子达到与球相切的点 $A$ 时，速度为 $v$，在该点的能量为 $E_{A}=e U+\\frac{1}{2} m v^{2}$, 其中 $e$ 是质子的电量。根据能量守恒，有 $E=E_{A}$ 。在 $A$ 点时，质子所受静电力沿球的径向，因此质子具有角动量守恒性质，即 $m v_{0} d=m v r$。结合以上方程，解得$U=\\left(1-\\frac{d^{2}}{r^{2}}\\right) \\frac{E}{e}$ 。代入 $E=2 \\mathrm{keV}$ 和 $d=\\frac{r}{2}$ 得 $U=\\left(1-\\frac{1}{4}\\right) \\frac{2}{e} \\operatorname{keV}=1500 \\mathrm{~V}$。",
+        "final_answer": "1500"
+    },
+    {
+        "question_number": "26.2_536b2322f9",
+        "condition": "质子加速器使每个质子得到的动能为 $E$ 。很细的质子束从加速器射向一个远离加速器的半径为 $r$ 的金属球，并留在球上。球的中心并不处在加速器发射出的质子运动方向的直线上，而与该直线的垂直距离为 $d$ ，且 $d<r$ 。",
+        "specific_questions": "若用电子束代替质子束，金属球的电势会发生什么变化？",
+        "solution": "用电子束充电时，打出电子可能会导致球的放电。当球捕获的电子数与从中打出的电子数达到动态平衡时，电势充电过程会停止。因而临界轨迹可能不是与球相切的轨迹，而是与其相近的轨迹，这将导致最终的电势（绝对值）稍低于用质子束充电的结果。",
+        "final_answer": "##不适用（解释性内容，无数值答案）"
+    },
+    {
+        "question_number": "32.1_ad0d57d661",
+        "condition": "圆形导体薄板的半径为 $R$ ，在其中轴线上与圆板中心 $O$ 相距为 $a$ 处有一个静止的点电荷 $Q$. 设 $a \\\\ll R$, 忽略边缘效应.",
+        "specific_questions": "导体板接地, 试求导体板上的电荷分布.",
+        "solution": "导体板接地时，可以用位于左侧一 $a$ 处电量为 $-Q$ 的虚点电荷代替。导体板右表面外附近与中心 $O$ 相距 $r$ 处的电场强度 $E(r)$ 和面电荷密度 $\\sigma(r)$ 为$$E(r)=\\\\frac{Q_{0}}{2 \\\\pi \\\\varepsilon_{0}(r^{2}+a^{2})^{3/2}}$$$$\\sigma(r)=\\\\frac{-Q_{0}}{2 \\\\pi(r^{2}+a^{2})^{3/2}}$$通过积分得到导体板右表面上总的感应电荷为$$\\\\int_{0}^{R} \\sigma(r) 2 \\\\pi r \\\\mathrm{d} r=-Q\\\\left[1-\\\\frac{1}{\\\\sqrt{1+\\\\left(\\\\frac{R}{a}\\\\right)^{2}}}\\\\right] \\\\approx-Q$$",
+        "final_answer": "$$-Q$$"
+    },
+    {
+        "question_number": "32.2_4f0b2163ed",
+        "condition": "圆形导体薄板的半径为 $R$ ，在其中轴线上与圆板中心 $O$ 相距为 $a$ 处有一个静止的点电荷 $Q$. 设 $a \\\\ll R$, 忽略边缘效应.",
+        "specific_questions": "导体板不接地, 带有电量 $Q_{0}$, 试求导体板上的电荷分布.",
+        "solution": "为确保电场线能垂直终止在导体板右表面，需在右表面上存在电量 $-Q$ 的分布，剩余的电量为$Q_{0} + Q$，均匀分布在两个表面上，面电荷密度分别为$$\\sigma=\\\\frac{Q_{0}+Q}{2 \\\\pi R^{2}}$$$$\\sigma_{G}(r)=\\sigma(r)+\\sigma=\\\\frac{Q_{0}+Q}{2 \\\\pi R^{2}}-\\\\frac{Q_{0}}{2 \\\\pi(r^{2}+a^{2})^{3/2}}$$$$\\sigma_{E}(r)=\\sigma=\\\\frac{Q_{0}+Q}{2 \\\\pi R^{2}}$$使导体板内电场强度为零。",
+        "final_answer": "$$\\sigma=\\\\frac{Q_{0}+Q}{2 \\\\pi R^{2}}$$"
+    },
+    {
+        "question_number": "34.1_e468662afd",
+        "condition": "半径为 $R$ 的导体球带有电量 $Q(Q>0)$ 。今在距球心为 $a$ 处 (a>R) 故置一个与 $Q$ 同号的点电荷 $q$ 。",
+        "specific_questions": "为使导体球在静电平衡时受到 $q$ 的作用力吸引，试确定 $q$ 的取值范围。",
+        "solution": "导体球接地，其电势为零。因点电荷 $q$ 的静电感应使球面上有感应电荷 $q^{\\prime}$ 。设感应电荷在球外的场可以等效地用虚设的位于 $a^{\\prime}$ 的点电荷 $q^{\\prime}$ 代替。应有 $$ \\frac{q}{4 \\pi \\varepsilon_{0} r} + \\frac{q}{4 \\pi \\varepsilon_{0} r^{\\prime}} = 0 $$ 即 $$ r^{\\prime} q = -r q^{\\prime} $$ 利用几何关系，得 $$ q \\sqrt{R^{2} + a^{\\prime 2} - 2 R a^{\\prime} \\cos \\theta} = -q^{\\prime} \\sqrt{R^{2} + a^{2} - 2 R a \\cos \\theta} $$ 即 $$ q^{2}(R^{2} + a^{\\prime 2} - 2 R a^{\\prime} \\cos \\theta) = q^{\\prime 2}(R^{2} + a^{2} - 2 R a \\cos \\theta) $$ 上式两边 $\\cos \\theta$ 项的系数相等，有 $$ a^{\\prime} q^{2} = a q^{\\prime 2} $$ 代入得 $$ a^{\\prime} = \\frac{R^{2}}{a} $$ $$ q^{\\prime} = -\\frac{R}{a} q $$ 撤去接地线后，总电量 $Q$ 的导体球在球外点电荷 $q$ 处的电场强度为 $$ E = \\frac{q^{\\prime}}{4 \\pi \\varepsilon_{0}(a-a^{\\prime})^{2}} + \\frac{Q-q^{\\prime}}{4 \\pi \\varepsilon_{0} a^{2}} $$ 点电荷 $q$ 所受作用力为 $$ F = \\frac{q^{\\prime} q}{4 \\pi \\varepsilon_{0}(a-a^{\\prime})^{2}} + \\frac{(Q-q^{\\prime}) q}{4 \\pi \\varepsilon_{0} a^{2}} $$ 代入 $a^{\\prime}$ 和 $q^{\\prime}$，得 $$ F = \\frac{-q}{4 \\pi \\varepsilon_{0} a^{2}} + \\left[ \\frac{(2 a^{2} - R^{2}) R^{3} q}{a(a^{2} - R^{2})^{2}} - Q\\right] $$",
+        "final_answer": "$$q > \\frac{a(a^{2} - R^{2})^{2}}{(2 a^{2} - R^{2}) R^{3}} Q$$"
+    },
+    {
+        "question_number": "35_902dc26144",
+        "condition": "两个半径均为 $R$ 的导体球相互接触形成一孤立导体。",
+        "specific_questions": "试求此孤立导体的电容。",
+        "solution": "首先在两球心处虚设一对点电荷 $q_{1}$ ，其电量为 $$q_{1}=4 \\\\pi \\\\varepsilon_{0} R U_{0}$$ 于是每个 $q_{1}$ 在自己的球面上产生的电势为 $U_{0}$ ，但 $q_{1}$ 还将在对方球面上产生附加电势。为了消除此附加电势，需在对方球内适当位置 $b_{2}$ 处虚设第二对点电荷 $q_{2}$ ， $$q_{2}=-\\\\frac{R}{2 R} q_{1}=-\\\\frac{q_{1}}{2}$$ $q_{2}$ 与球心的距离 $b_{2}$ 为 $$b_{2}=\\\\frac{R^{2}}{2 R}=\\\\frac{R}{2}$$ 这样的递推继续进行到第 $n$ 对虚设点电荷后，总电量 $Q$ 就是这些点电荷的电量之和。已知 $$q_{1}=4 \\\\pi \\\\varepsilon_{0} R U_{0}$$ 和 $$q_{2}=-\\\\frac{q_{1}}{2}$$ ，进而得到 $$Q=2 q_{1}(1-\\\\frac{1}{2}+\\\\frac{1}{3}-\\\\frac{1}{4}+\\\\cdots)$$ 利用公式 $$\\\\ln 2=1-\\\\frac{1}{2}+\\\\frac{1}{3}-\\\\frac{1}{4}+\\\\cdots$$ 得 $$Q=2 q_{1} \\\\ln 2=8 \\\\pi \\\\varepsilon_{0} R U_{0} \\\\ln 2$$",
+        "final_answer": "8 \\\\pi \\\\varepsilon_{0} R \\\\ln 2"
+    },
+    {
+        "question_number": "41.1_0875eb0cef",
+        "condition": "两块长与宽均为 $\\alpha$ 与 $b$ 的导体平板在制成平行板电容器时稍有偏斜, 使两板一对宽边相距为 $d$, 另一对宽边相距为 $(d+h)$, 且 $h \\ll d$. 若此电容器内充满了相对电容率为 $\\varepsilon_{r}$ 的电介质.",
+        "specific_questions": "试求电容器的电容.",
+        "solution": "如图，两导体平板之间的夹角为\n\n$$\n\\theta_{0}=\\arccos \\frac{h}{a} \\approx \\frac{h}{a}\n$$\n\n取两板交线为 $O$ 点，它与平板近端 $O^{\\prime}$ 点之间的距离为\n\n$$\nO O^{\\prime}=\\frac{d}{\\theta_{0}} \\approx \\frac{a d}{h}\n$$\n\n设两板分别带电 $\\pm Q$ ，其间的电势差为 $\\Delta U$ 。可以近似地认为，在两板之间的电场中，等势面是一系列不同 $\\theta$ 对应的平面，与之垂直的电场线则是一系列以 $O$ 为中心的圆弧线。近似地认为，每条圆弧线（电场线）上各点的电场强度相同，不同圆弧线上的电场强度稍有不同，把通过 $x$ 点的圆弧线上的电场强度表为 $E_{x}$ ，则\n\n$$\nE_{x}=\\frac{\\Delta U}{l}\n$$\n\n式中 $l$ 是两板之间在 $x$ 处的圆弧形电场线的长度，即\n\n$$\nl=\\left(O O^{\\prime}+x\\right) \\theta_{0}=\\left(\\frac{a d}{h}+x\\right) \\theta_{0}=d+\\frac{h}{a} x\n$$\n\n式中 $x$ 是从 $O^{\\prime}$ 点到 $x$ 点的距离。由以上两式，得出电场强度分布为\n\n$$\nE_{x}=\\frac{\\Delta U}{l}=\\frac{\\Delta U}{d+\\frac{h}{a} x}\n$$\n\n相应的电位移矢量为\n\n$$\nD_{x}=\\epsilon_{r} \\epsilon_{0} E_{x}=\\frac{\\epsilon_{r} \\epsilon_{0} \\Delta U}{d+\\frac{h}{a} x}\n$$\n\n为了确定导体板在 $x$ 处的自由电荷面密度 $\\sigma_{x}$ 与 $D_{x}$ 的关系，可利用电位移矢量的高斯定理，导体板上的总电量为\n\n$$\nQ=\\varepsilon_{r} \\varepsilon_{0} b \\Delta U \\left(\\frac{a}{h} \\ln \\frac{d+h}{h}\\right)\n$$\n\n因此，电容器的电容为\n\n$$\nC=\\frac{Q}{\\Delta U}=\\frac{\\varepsilon_{r} \\varepsilon_{0} a b}{h} \\ln \\frac{d+h}{h}\n$$\n\n若取 $\\ln \\left(1+\\frac{h}{d}\\right) \\approx \\frac{h}{d}$ ，则 \n\n$$\nC \\approx \\frac{\\varepsilon_{r} \\varepsilon_{0} a b}{h}\n$$\n\n若取\n\n$$\n\\ln \\left(1+\\frac{h}{d}\\right) \\approx \\frac{h}{d}-\\frac{1}{2}\\left(\\frac{h}{d}\\right)^{2}\n$$\n\n则\n\n$$\nC=\\frac{\\varepsilon_{r} \\varepsilon_{0} a b}{h}\\left(1-\\frac{h}{2 d}\\right)\n$$",
+        "final_answer": "$$\\frac{\\varepsilon_{r} \\varepsilon_{0} a b}{h}\\left(1-\\frac{h}{2 d}\\right)$$"
+    },
+    {
+        "question_number": "44_a3c7f3b6b7",
+        "condition": "在 $\\varepsilon \\leqslant 0$ 的半空间中充满了相对电容率为 $\\varepsilon_{r}$ 的介质，$\\varepsilon>0$ 的半空间为真空，其中在 $\\varepsilon=h_{1}$ 处有一电量为 $q$ 的点电荷。用外力将此点电荷从 $\\varepsilon=h_{1}$ 处缓慢地移动到 $\\varepsilon=h_{2}$ 处。",
+        "specific_questions": "试求外力所作的功 $W$ 。",
+        "solution": "在 $z=0$ 的 $x y$ 平面上取极坐标 $(r, \\theta)$, 则 $z=0$ 的介质表面的极化电荷的分布具有轴对称性, 极化电荷的面密度可表为 $\\sigma(r)$. 在介质表面的上侧, 即在 $z=0^{+}(z \\geqslant 0)$ 处, 电场强度的 $z$ 分量是 $q$ 和 $\\sigma(r)$ 贡献之和, 为\n\n$$\nE_{+, z}=-\\frac{q z}{4 \\pi \\varepsilon_{0}\\left(r^{2}+z^{2}\\right)^{N}}+\\frac{\\sigma(r)}{2 \\varepsilon_{0}}\n$$\n\n式中右第一项是在 $z$ 处的点电荷 $q$, 在 $z=0^{+}(z \\geqslant 0)$ 平面的 $r$ 处产生的电场强度的 $z$ 分量; 右第二项是 $\\sigma(r)$ 在该处电场强度的 $z$ 分量, 这是由高斯定理得出的. 同样, 在介质表面的下侧, 即在 $z=0^{-}(z \\leqslant 0)$ 处, 电场强度的 $z$ 分量为\n\n$$\nE_{-, z}=-\\frac{q z}{4 \\pi \\varepsilon_{0}\\left(r^{2}+z^{2}\\right)^{N}}-\\frac{\\sigma(r)}{2 \\varepsilon_{0}}\n$$\n\n因介质表面内、外电位移矢量的法向分量 (即 $z$ 分量)连续,故有\n\n$$\n\\varepsilon_{0} E_{+, z}=\\varepsilon_{r} \\varepsilon_{0} E_{-, z}\n$$\n\n由以上三式,得出\n\n$$\n\\sigma(r)=\\frac{\\left(1-\\varepsilon_{r}\\right) q z}{2 \\pi\\left(1+\\varepsilon_{r}\\right)\\left(r^{2}+z^{2}\\right)^{N}}\n$$\n\n这是当点电荷 $q$ 在任意位置 $z$ 处时, 介质表面 $r$ 处的极化电荷面密度 $\\sigma(r)$ 的表达式. 因 $\\varepsilon_{r}>1$,故 $\\sigma(r)$ 与 $q$ 异号,相互吸引.\n\n现在计算介质表面的全部极化电荷在 $z$ 处 (即点电荷 $q$ 所在处) 的电场强度. 由于极化电荷分布的轴对称性, $z$ 处的电场强度应沿 $z$ 方向, 即\n\n$$\nE=E_{z}\n$$\n\n把介质表面的极化电荷以 $z=0$ 为中心, 分成许多半径为 $r$, 宽为 $\\mathrm{d} r$ 的环状带, 把每一环状带在 $z$ 处产生的电场强度的 $z$ 分量积分, 即得 $E_{z}$, 为\n\n$$\nE_{z}=\\int_{0}^{\\infty} \\frac{\\sigma(r) \\cdot 2 \\pi r \\mathrm{~d} r}{4 \\pi \\varepsilon_{0}\\left(r^{2}+z^{2}\\right)} \\cdot \\frac{z}{\\sqrt{r^{2}+z^{2}}}\n$$\n\n把 $\\sigma(r)$ 代入上式, 得\n\n$$\n\\begin{aligned}\nE_{z} & =\\frac{\\left(1-\\varepsilon_{r}\\right) q z^{2}}{4 \\pi \\varepsilon_{0}\\left(1+\\varepsilon_{r}\\right)} \\int_{0}^{\\infty} \\frac{r \\mathrm{~d} r}{\\left(r^{2}+z^{2}\\right)^{3}} \\\\\n& =\\frac{\\left(1-\\varepsilon_{r}\\right) q z^{2}}{4 \\pi \\varepsilon_{0}\\left(1+\\varepsilon_{r}\\right)} \\cdot \\frac{1}{4 z^{4}}=\\frac{\\left(1-\\varepsilon_{r}\\right) q}{16 \\pi \\varepsilon_{0}\\left(1+\\varepsilon_{r}\\right) z^{2}}\n\\end{aligned}\n$$\n\n在 $z$ 处的点电荷 $q$ 所受电场作用力沿 $z$ 方向, 为\n\n$$\nF_{z}=q E_{z}=\\frac{1-\\varepsilon_{r} \\rho^{2}}{16 \\pi \\varepsilon_{0}\\left(1+\\varepsilon_{r}\\right) z^{2}}\n$$\n\n沿 $z$ 轴缓慢移动点电荷 $q$ 时, 所需外力为\n\n$$\nF_{z}^{\\prime}=-F_{z}\n$$\n\n因此，把点电荷 $q$ 从 $z=h_{1}$ 处沿 $z$ 轴缓慢移动到 $z=h_{2}$ 处，外力作功为\n\n$$\n\\begin{aligned}\nW & =\\int_{h_{1}}^{h_{2}} F_{z}^{\\prime} \\mathrm{d} z=\\frac{\\left(\\varepsilon_{r}-1\\right) q^{2}}{16 \\pi \\varepsilon_{0}\\left(1+\\varepsilon_{r}\\right)} \\int_{h_{1}}^{h_{2}} \\frac{\\mathrm{~d} z}{z^{2}} \\\\\n& =\\frac{\\left(\\varepsilon_{r}-1\\right) q^{2}}{16 \\pi \\varepsilon_{0}\\left(1+\\varepsilon_{r}\\right)}\\left(\\frac{1}{h_{1}}-\\frac{1}{h_{2}}\\right)\n\\end{aligned}\n$$",
+        "final_answer": "$$\\frac{\\left(\\varepsilon_{r}-1\\right) q^{2}}{16 \\pi \\varepsilon_{0}\\left(1+\\varepsilon_{r}\\right)}\\left(\\frac{1}{h_{1}}-\\frac{1}{h_{2}}\\right)$$"
+    },
+    {
+        "question_number": "46.1_bb215293b2",
+        "condition": "两个同心导体球壳构成电容器，外球壳的内半径是固定的，其大小为 5 \\mathrm{~cm} ，内球壳的外半径可以自由选择，两球壳之间充满了各向同性的均匀介质。已知电介质的击穿电场强度为 2.0 \\times 10^{7} \\mathrm{~V} / \\mathrm{m} 。",
+        "specific_questions": "试求该电容器所能承受的最大电压。",
+        "solution": "设两球分别带电为 \\pm Q 时，电容器内的电场强度为 E_{r} ，电容器的电压为 \\Delta U 。电容器内的电场强度为\n\n$$\nE_{r}=\\frac{Q}{4 \\pi \\varepsilon_{r} \\varepsilon_{0} r^{2}}, \\quad R_{\\mathrm{PI}}<r<R_{\\mathrm{fl}}\n$$\n其中 $R_{\\text {f }}$ 是外球壳的内半径， $R_{\\text {PI }}$ 是内球壳的外半径。电容器的电压为\n\n$$\n\\Delta U=\\frac{Q}{4 \\pi \\varepsilon_{r} \\varepsilon_{0}}\\left(\\frac{1}{R_{\\mathrm{PI}}}-\\frac{1}{R_{\\mathrm{fl}}}\\right)\n$$\n消去 $Q$ 得\n\n$$\n\\Delta U=E_{r}\\left[r^{2}\\left(\\frac{1}{R_{\\mathrm{fl}}}-\\frac{1}{R_{\\mathrm{fl}}}\\right)\\right]\n$$\n取 $E_{r}$ 为击穿电场强度\n\n$$\nE_{r}=E_{R_{\\mathrm{fl}}}=E_{\\text {击穿 }}\n$$\n$r^{2}$ 应取为\n\n$$\nr^{2}=R_{\\mathrm{PI}}^{2}\n$$\n使 $R_{\\mathrm{PI}}^{2}\\left(\\frac{1}{R_{\\mathrm{fl}}}-\\frac{1}{R_{\\mathrm{fl}}}\\right)$ 极大，取\n\n$$\nR_{\\mathrm{fl}}=\\frac{1}{2} R_{\\mathrm{fl}}\n$$\n带入最终得\n\n$$\n\\Delta U_{\\max }=E_{\\text {击穿 }} \\cdot \\frac{R_{\\mathrm{fl}}}{4}\n$$\n",
+        "final_answer": "$$2.5 \\times 10^{5}$$"
+    }
+]
