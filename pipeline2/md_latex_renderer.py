@@ -38,12 +38,12 @@ class MdLatexRenderer:
     <meta charset="UTF-8">
     <title>Markdown and LaTeX Renderer</title>
     <!-- KaTeX CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <link rel="stylesheet" href="file:///%s/static/katex.min.css">
     <!-- KaTeX JS -->
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    <script src="file:///%s/static/katex.min.js"></script>
+    <script src="file:///%s/static/auto-render.min.js"></script>
     <!-- Markdown-it JS -->
-    <script src="https://cdn.jsdelivr.net/npm/markdown-it@13.0.1/dist/markdown-it.min.js"></script>
+    <script src="file:///%s/static/markdown-it.min.js"></script>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -210,8 +210,15 @@ class MdLatexRenderer:
         # 转义处理后的内容，以便安全地插入到JavaScript中
         content_escaped = json.dumps(processed_content)
         
+        # 获取当前工作目录的绝对路径，用于引用本地文件
+        current_dir = os.path.abspath(os.getcwd()).replace('\\', '/')
+        
         # 生成完整HTML - 注意参数顺序和数量必须与模板中的%s占位符匹配
         return self.html_template % (
+            current_dir,               # KaTeX CSS path
+            current_dir,               # KaTeX JS path
+            current_dir,               # KaTeX auto-render path
+            current_dir,               # markdown-it JS path
             text_color,                # body color
             bg_color,                  # body background-color
             padding,                   # body padding

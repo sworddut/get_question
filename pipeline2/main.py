@@ -4,6 +4,8 @@ import glob
 import threading
 import time
 import re
+import tempfile
+import asyncio
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -12,7 +14,8 @@ from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from matplotlib.figure import Figure
 from openpyxl import Workbook
 from openpyxl.drawing.image import Image
-from call_llm import call_deepseek, call_doubao, call_qwen, call_deepseek_v3, call_deepseek_json
+from call_llm import call_deepseek, call_doubao, call_qwen, call_deepseek_v3, call_deepseek_json, \
+                  async_call_deepseek, async_call_doubao, async_call_qwen, async_call_deepseek_v3
 from prompts import *
 from md_latex_renderer import MdLatexRenderer
 # 定义提示词模板
@@ -36,6 +39,80 @@ def get_ans(question_json):
     # Combine the 题干 and 提问 to form the complete question
     question = question_json["题干"] + " " + question_json["提问"]
     print(f"Processing question: {question}")
+    
+    # 使用协程并行调用三个模型
+    model_times = {"deepseek": 0, "doubao": 0, "qwen": 0}
+    
+    async def call_models_async():
+        # 创建三个模型的异步任务
+        print("开始并行调用三个模型...")
+        
+        async def call_deepseek_async():
+            print(f"Calling DeepSeek...")
+            model_start = time.time()
+            result = await async_call_deepseek(question)
+            model_end = time.time()
+            model_times["deepseek"] = model_end - model_start
+            print(f"DeepSeek completed in {model_times['deepseek']:.2f} seconds")
+            return result
+            
+        async def call_doubao_async():
+            print(f"Calling Doubao...")
+            model_start = time.time()
+            result = await async_call_doubao(question)
+            model_end = time.time()
+            model_times["doubao"] = model_end - model_start
+            print(f"Doubao completed in {model_times['doubao']:.2f} seconds")
+            return result
+            
+        async def call_qwen_async():
+            print(f"Calling Qwen...")
+            model_start = time.time()
+            result = await async_call_qwen(question)
+            model_end = time.time()
+            model_times["qwen"] = model_end - model_start
+            print(f"Qwen completed in {model_times['qwen']:.2f} seconds")
+            return result
+        
+        # 并行运行所有任务
+        deepseek_result, doubao_result, qwen_result = await asyncio.gather(
+            call_deepseek_async(), call_doubao_async(), call_qwen_async()
+        )
+        
+        return deepseek_result, doubao_result, qwen_result
+    
+    # 使用asyncio.run运行异步函数
+    try:
+        # 设置事件循环策略以避免Windows上的警告
+        if os.name == 'nt':
+            asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+            
+        # 运行异步函数
+        deepseek_ans, doubao_ans, qwen_ans = asyncio.run(call_models_async())
+        
+        # Add the answers to the JSON
+        question_json["deepseek_ans"] = deepseek_ans
+        question_json["doubao_ans"] = doubao_ans
+        question_json["qwen_ans"] = qwen_ans
+        
+        # Add timing information to the JSON
+        question_json["model_times"] = model_times
+    except Exception as e:
+        print(f"调用模型时出错: {e}")
+        # 如果协程方法失败，回退到线程方法
+        print("回退到线程方法...")
+        get_ans_with_threads(question_json)
+
+def get_ans_with_threads(question_json):
+    """
+    使用线程获取三个模型的答案并更新问题JSON（作为备用方法）
+    
+    Args:
+        question_json: 题目的JSON对象，会被直接修改
+    """
+    # Combine the 题干 and 提问 to form the complete question
+    question = question_json["题干"] + " " + question_json["提问"]
+    print(f"Processing question with threads: {question}")
     
     # Use threads to call the three models in parallel
     results = {"deepseek_ans": None, "doubao_ans": None, "qwen_ans": None}
@@ -110,10 +187,61 @@ def jude_ans(question_json):
     model_times = {"deepseek_v3": 0, "doubao_v3": 0, "qwen_v3": 0}
     full_responses = {"deepseek": "", "doubao": "", "qwen": ""}
     
+    # 定义线程评估方法（备用方法）
+    def eval_with_threads():
+        """使用线程并行评估三个模型的答案（备用方法）"""
+        def eval_deepseek_thread():
+            print(f"Evaluating DeepSeek answer with thread...")
+            model_start = time.time()
+            prompt = create_eval_prompt("DeepSeek", deepseek_ans)
+            response = call_deepseek_v3(prompt)
+            full_responses["deepseek"] = response
+            results["deepseek"] = extract_result(response)
+            model_end = time.time()
+            model_times["deepseek_v3"] = model_end - model_start
+            print(f"DeepSeek evaluation completed in {model_times['deepseek_v3']:.2f} seconds")
+            
+        def eval_doubao_thread():
+            print(f"Evaluating Doubao answer with thread...")
+            model_start = time.time()
+            prompt = create_eval_prompt("Doubao", doubao_ans)
+            response = call_deepseek_v3(prompt)
+            full_responses["doubao"] = response
+            results["doubao"] = extract_result(response)
+            model_end = time.time()
+            model_times["doubao_v3"] = model_end - model_start
+            print(f"Doubao evaluation completed in {model_times['doubao_v3']:.2f} seconds")
+            
+        def eval_qwen_thread():
+            print(f"Evaluating Qwen answer with thread...")
+            model_start = time.time()
+            prompt = create_eval_prompt("Qwen", qwen_ans)
+            response = call_deepseek_v3(prompt)
+            full_responses["qwen"] = response
+            results["qwen"] = extract_result(response)
+            model_end = time.time()
+            model_times["qwen_v3"] = model_end - model_start
+            print(f"Qwen evaluation completed in {model_times['qwen_v3']:.2f} seconds")
+        
+        # 创建线程
+        threads = [
+            threading.Thread(target=eval_deepseek_thread),
+            threading.Thread(target=eval_doubao_thread),
+            threading.Thread(target=eval_qwen_thread)
+        ]
+        
+        # 启动所有线程
+        for thread in threads:
+            thread.start()
+        
+        # 等待所有线程完成
+        for thread in threads:
+            thread.join()
+    
     # 创建评估提示模板
     def create_eval_prompt(model_name, model_answer):
         return f"""
-请评估以下问题的答案是否正确:
+请评估以下问题的答案是否正确：
 
 问题: {question}
 标准答案: {standard_answer}
@@ -144,54 +272,118 @@ def jude_ans(question_json):
                 # 如果仍无法确定，返回未知
                 return "未知"
     
-    # 使用线程并行评估三个模型的答案
-    def eval_deepseek_thread():
-        print(f"Evaluating DeepSeek answer...")
-        model_start = time.time()
-        prompt = create_eval_prompt("DeepSeek", deepseek_ans)
-        response = call_deepseek_v3(prompt)
-        full_responses["deepseek"] = response
-        results["deepseek"] = extract_result(response)
-        model_end = time.time()
-        model_times["deepseek_v3"] = model_end - model_start
-        print(f"DeepSeek evaluation completed in {model_times['deepseek_v3']:.2f} seconds")
+    # 使用协程并行评估三个模型的答案
+    async def eval_models_async():
+        async def eval_deepseek_async():
+            print(f"Evaluating DeepSeek answer...")
+            model_start = time.time()
+            prompt = create_eval_prompt("DeepSeek", deepseek_ans)
+            response = await async_call_deepseek_v3(prompt)
+            full_responses["deepseek"] = response
+            result = extract_result(response)
+            model_end = time.time()
+            model_times["deepseek_v3"] = model_end - model_start
+            print(f"DeepSeek evaluation completed in {model_times['deepseek_v3']:.2f} seconds")
+            return result
         
-    def eval_doubao_thread():
-        print(f"Evaluating Doubao answer...")
-        model_start = time.time()
-        prompt = create_eval_prompt("Doubao", doubao_ans)
-        response = call_deepseek_v3(prompt)
-        full_responses["doubao"] = response
-        results["doubao"] = extract_result(response)
-        model_end = time.time()
-        model_times["doubao_v3"] = model_end - model_start
-        print(f"Doubao evaluation completed in {model_times['doubao_v3']:.2f} seconds")
+        async def eval_doubao_async():
+            print(f"Evaluating Doubao answer...")
+            model_start = time.time()
+            prompt = create_eval_prompt("Doubao", doubao_ans)
+            response = await async_call_deepseek_v3(prompt)
+            full_responses["doubao"] = response
+            result = extract_result(response)
+            model_end = time.time()
+            model_times["doubao_v3"] = model_end - model_start
+            print(f"Doubao evaluation completed in {model_times['doubao_v3']:.2f} seconds")
+            return result
         
-    def eval_qwen_thread():
-        print(f"Evaluating Qwen answer...")
-        model_start = time.time()
-        prompt = create_eval_prompt("Qwen", qwen_ans)
-        response = call_deepseek_v3(prompt)
-        full_responses["qwen"] = response
-        results["qwen"] = extract_result(response)
-        model_end = time.time()
-        model_times["qwen_v3"] = model_end - model_start
-        print(f"Qwen evaluation completed in {model_times['qwen_v3']:.2f} seconds")
+        async def eval_qwen_async():
+            print(f"Evaluating Qwen answer...")
+            model_start = time.time()
+            prompt = create_eval_prompt("Qwen", qwen_ans)
+            response = await async_call_deepseek_v3(prompt)
+            full_responses["qwen"] = response
+            result = extract_result(response)
+            model_end = time.time()
+            model_times["qwen_v3"] = model_end - model_start
+            print(f"Qwen evaluation completed in {model_times['qwen_v3']:.2f} seconds")
+            return result
+        
+        # 并行运行所有评估任务
+        deepseek_result, doubao_result, qwen_result = await asyncio.gather(
+            eval_deepseek_async(), eval_doubao_async(), eval_qwen_async()
+        )
+        
+        return deepseek_result, doubao_result, qwen_result
     
-    # 创建线程
-    threads = [
-        threading.Thread(target=eval_deepseek_thread),
-        threading.Thread(target=eval_doubao_thread),
-        threading.Thread(target=eval_qwen_thread)
-    ]
+    # 定义线程评估方法（备用方法）
+    def eval_with_threads():
+        """使用线程并行评估三个模型的答案（备用方法）"""
+        def eval_deepseek_thread():
+            print(f"Evaluating DeepSeek answer with thread...")
+            model_start = time.time()
+            prompt = create_eval_prompt("DeepSeek", deepseek_ans)
+            response = call_deepseek_v3(prompt)
+            full_responses["deepseek"] = response
+            results["deepseek"] = extract_result(response)
+            model_end = time.time()
+            model_times["deepseek_v3"] = model_end - model_start
+            print(f"DeepSeek evaluation completed in {model_times['deepseek_v3']:.2f} seconds")
+            
+        def eval_doubao_thread():
+            print(f"Evaluating Doubao answer with thread...")
+            model_start = time.time()
+            prompt = create_eval_prompt("Doubao", doubao_ans)
+            response = call_deepseek_v3(prompt)
+            full_responses["doubao"] = response
+            results["doubao"] = extract_result(response)
+            model_end = time.time()
+            model_times["doubao_v3"] = model_end - model_start
+            print(f"Doubao evaluation completed in {model_times['doubao_v3']:.2f} seconds")
+            
+        def eval_qwen_thread():
+            print(f"Evaluating Qwen answer with thread...")
+            model_start = time.time()
+            prompt = create_eval_prompt("Qwen", qwen_ans)
+            response = call_deepseek_v3(prompt)
+            full_responses["qwen"] = response
+            results["qwen"] = extract_result(response)
+            model_end = time.time()
+            model_times["qwen_v3"] = model_end - model_start
+            print(f"Qwen evaluation completed in {model_times['qwen_v3']:.2f} seconds")
+        
+        # 创建线程
+        threads = [
+            threading.Thread(target=eval_deepseek_thread),
+            threading.Thread(target=eval_doubao_thread),
+            threading.Thread(target=eval_qwen_thread)
+        ]
+        
+        # 启动所有线程
+        for thread in threads:
+            thread.start()
+        
+        # 等待所有线程完成
+        for thread in threads:
+            thread.join()
     
-    # 启动所有线程
-    for thread in threads:
-        thread.start()
-    
-    # 等待所有线程完成
-    for thread in threads:
-        thread.join()
+    # 使用asyncio.run运行异步函数
+    try:
+        # 设置事件循环策略以避免Windows上的警告
+        if os.name == 'nt':
+            asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+        
+        # 运行异步函数
+        deepseek_result, doubao_result, qwen_result = asyncio.run(eval_models_async())
+        results["deepseek"] = deepseek_result
+        results["doubao"] = doubao_result
+        results["qwen"] = qwen_result
+    except Exception as e:
+        print(f"异步评估出错: {e}")
+        # 如果协程方法失败，回退到线程方法
+        print("回退到线程方法...")
+        eval_with_threads()
     
     # 将评估结果添加到JSON
     question_json["evaluation"] = results
@@ -446,6 +638,9 @@ def get_png(question_id, question, deepseek_ans, doubao_ans, qwen_ans, deepseek_
         # 只为错误的模型生成PNG图片
         if not deepseek_correct:
             deepseek_content = save_text_to_file("DeepSeek-R1", deepseek_ans, deepseek_txt, deepseek_time)
+            # 确保临时目录存在
+            temp_dir = os.path.join(tempfile.gettempdir(), "deepseek")
+            os.makedirs(temp_dir, exist_ok=True)
             renderer.render_to_image(
                 deepseek_content, 
                 output_filename=os.path.join("deepseek", os.path.basename(deepseek_png)), 
@@ -457,6 +652,9 @@ def get_png(question_id, question, deepseek_ans, doubao_ans, qwen_ans, deepseek_
             
         if not doubao_correct:
             doubao_content = save_text_to_file("Doubao-1-5-thinking-pro-250415", doubao_ans, doubao_txt, doubao_time)
+            # 确保临时目录存在
+            temp_dir = os.path.join(tempfile.gettempdir(), "doubao")
+            os.makedirs(temp_dir, exist_ok=True)
             renderer.render_to_image(
                 doubao_content, 
                 output_filename=os.path.join("doubao", os.path.basename(doubao_png)), 
@@ -468,6 +666,9 @@ def get_png(question_id, question, deepseek_ans, doubao_ans, qwen_ans, deepseek_
             
         if not qwen_correct:
             qwen_content = save_text_to_file("QwQ-32B", qwen_ans, qwen_txt, qwen_time)
+            # 确保临时目录存在
+            temp_dir = os.path.join(tempfile.gettempdir(), "qwen")
+            os.makedirs(temp_dir, exist_ok=True)
             renderer.render_to_image(
                 qwen_content, 
                 output_filename=os.path.join("qwen", os.path.basename(qwen_png)), 
